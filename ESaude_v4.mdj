@@ -32494,7 +32494,7 @@
 									"visible": false,
 									"font": "Arial;12;0",
 									"containerExtending": true,
-									"left": 347,
+									"left": 343,
 									"top": 634,
 									"height": 12,
 									"alpha": 1.5707963267948966,
@@ -32516,7 +32516,7 @@
 									"visible": null,
 									"font": "Arial;12;0",
 									"containerExtending": true,
-									"left": 347,
+									"left": 343,
 									"top": 619,
 									"height": 12,
 									"alpha": 1.5707963267948966,
@@ -32538,7 +32538,7 @@
 									"visible": false,
 									"font": "Arial;12;0",
 									"containerExtending": true,
-									"left": 347,
+									"left": 343,
 									"top": 664,
 									"height": 12,
 									"alpha": -1.5707963267948966,
@@ -44392,9 +44392,9 @@
 														"$ref": "AAAAAAF4Ja8IP1JhntM="
 													},
 													"font": "Arial;13;0",
-													"left": 30.55908203125,
+													"left": 32.72998046875,
 													"top": 13,
-													"width": 72.8427734375,
+													"width": 79.0380859375,
 													"height": 13,
 													"text": "Iniciar Sesión"
 												},
@@ -44407,7 +44407,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 12.55908203125,
+													"width": 14.72998046875,
 													"height": 13,
 													"text": "sd"
 												}
@@ -45124,7 +45124,7 @@
 													},
 													"visible": false,
 													"font": "Arial;13;0",
-													"left": 55.99365234375,
+													"left": 56.72998046875,
 													"top": 317,
 													"width": 1,
 													"height": 13
@@ -45138,7 +45138,7 @@
 													"font": "Arial;13;1",
 													"left": 37,
 													"top": 317,
-													"width": 13.99365234375,
+													"width": 14.72998046875,
 													"height": 13,
 													"text": "alt"
 												},
@@ -45171,7 +45171,7 @@
 																	"font": "Arial;13;0",
 																	"left": 52,
 																	"top": 350,
-																	"width": 293.5283203125,
+																	"width": 320.861328125,
 																	"height": 13,
 																	"text": "[Usuario non existe, suspendido ou contrasinal inválido]"
 																}
@@ -45204,7 +45204,7 @@
 																	"font": "Arial;13;0",
 																	"left": 52,
 																	"top": 440,
-																	"width": 95.646484375,
+																	"width": 102.5908203125,
 																	"height": 13,
 																	"text": "[Usuario correcto]"
 																}
@@ -45945,9 +45945,9 @@
 														"$ref": "AAAAAAF4JgoEDVoewik="
 													},
 													"font": "Arial;13;0",
-													"left": 30.55908203125,
+													"left": 32.72998046875,
 													"top": 13,
-													"width": 45.052734375,
+													"width": 48.67724609375,
 													"height": 13,
 													"text": "Rexistro"
 												},
@@ -45960,7 +45960,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 12.55908203125,
+													"width": 14.72998046875,
 													"height": 13,
 													"text": "sd"
 												}
@@ -46677,7 +46677,7 @@
 													},
 													"visible": false,
 													"font": "Arial;13;0",
-													"left": 55.99365234375,
+													"left": 56.72998046875,
 													"top": 317,
 													"width": 1,
 													"height": 13
@@ -46691,7 +46691,7 @@
 													"font": "Arial;13;1",
 													"left": 37,
 													"top": 317,
-													"width": 13.99365234375,
+													"width": 14.72998046875,
 													"height": 13,
 													"text": "alt"
 												},
@@ -46724,7 +46724,7 @@
 																	"font": "Arial;13;0",
 																	"left": 52,
 																	"top": 350,
-																	"width": 313.345703125,
+																	"width": 347.57861328125,
 																	"height": 13,
 																	"text": "[Usuario xa existe, contrasinal inseguro, datos incoherentes]"
 																}
@@ -46757,7 +46757,7 @@
 																	"font": "Arial;13;0",
 																	"left": 52,
 																	"top": 440,
-																	"width": 95.646484375,
+																	"width": 102.5908203125,
 																	"height": 13,
 																	"text": "[Usuario correcto]"
 																}
