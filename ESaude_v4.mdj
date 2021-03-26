@@ -1831,7 +1831,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF3ubMSP0Va5VQ="
 							},
-							"name": "Ver datos persoais"
+							"name": "Ver datos persoais",
+							"documentation": "**Propósito:** O usuario poderá observar os datos que ten rexistrado no sistema\n\n**Escenario principal**\n\n1.  sistema amosa a ventá cos seus datos persoais, os campos pódense editar.\n\n2. Se algún campo é modificado, habilítase un botón para gardalos.\n\n3. (Se se pulsa o botón, caso **MODIFICAR DATOS PERSOAIS**)\n\n**Post-condición**\n\nMostrase os datos persoais por pantalla"
 						},
 						{
 							"_type": "UMLUseCase",
@@ -1880,7 +1881,8 @@
 										"$ref": "AAAAAAF3uaaGGDbllb0="
 									}
 								}
-							]
+							],
+							"documentation": "**Propósito:** Modificar os datos persoais do usuario.\n\n**Pre-condición**\n\nO usuario visualizou os seus datos persoais\n\n**Escenario principal**\n\n1. O sistema rexistra os cambios no perfil do usuario.\n\n2. Amósanse os datos modificados na ventá de datos do usuario\n\n**Escenario secundario**\n\n- 2a: Os datos introducidos non son válidos.  \n  1. O sistema retornará á última versión válida dos datos dese usuario.  \n  2. Amósanse os datos antigos na ventá de datos do usuario.  \n  3. Móstrase unha mensaxe cos campos que produciron erro.\n\n**Post-condición**\n\nModifícanse os datos do usuario no sistema"
 						},
 						{
 							"_type": "UMLUseCase",
@@ -1889,7 +1891,7 @@
 								"$ref": "AAAAAAF3ubMSP0Va5VQ="
 							},
 							"name": "Solicitar a baixa",
-							"documentation": "Só é necesario que interveña un dos actores (mesmo caso de uso para ambos, pero só lle afecta a un)."
+							"documentation": "**Propósito:** Mandar unha solicitude de baixa ao administrador\n\n**Pre-condición**\n\nO usuario iniciou sesión no sistema.\n\n**Escenario principal**\n\n1. O sistema amosa a ventá de Solicitar Baixa.\n\n2. O doente solicita a baixa pulsando un botón.\n\n3. Se é pulsado, envíase a solicitude ao administrador.\n\n**Post-condición**\n\nAlmacénase esta información na táboa de usuarios do administrador."
 						},
 						{
 							"_type": "UMLPackage",
@@ -1906,7 +1908,7 @@
 										"$ref": "AAAAAAF3udUBItK2Ey8="
 									},
 									"name": "Rexistrarse",
-									"documentation": "**Escenario principal de éxito:**\n\n1. O sistema amosa a ventá de rexistro. \n\n2. O usuario anónimo completa a información necesaria para rexistrarse (data de nacemento, xénero, alerxias, outras doenzas diagnosticadas, nome de usuario, contrasinal) \n\n3. O sistema autoriza o rexistro. \n\n4. O sistema confirma ao usuario anónimo que está rexistrado. \n\n**Escenario secundario:**\n\n- 3a: Hai un erro nos datos do rexistro.  \n  .1: Indícanse os campos incorrectos para a súa corrección \n\n**Post-condición:**\n\nA información dun novo usuario é rexistrada no sistema."
+									"documentation": "**Propósito:** Un usuario anónimo rexistrarase no sistema\n\n**Escenario principal de éxito**\n\n1. O sistema amosa a ventá de rexistro. \n\n2. O usuario anónimo completa a información necesaria para rexistrarse (data de nacemento, xénero, alerxias, outras doenzas diagnosticadas, nome de usuario, contrasinal) \n\n3. O sistema autoriza o rexistro. \n\n4. O sistema confirma ao usuario anónimo que está rexistrado. \n\n**Escenario secundario**\n\n- 3a: Hai un erro nos datos do rexistro.  \n  .1: Indícanse os campos incorrectos para a súa corrección \n\n**Post-condición**\n\nA información dun novo usuario é rexistrada no sistema."
 								},
 								{
 									"_type": "UMLUseCase",
@@ -1914,7 +1916,8 @@
 									"_parent": {
 										"$ref": "AAAAAAF3udUBItK2Ey8="
 									},
-									"name": "Iniciar sesión"
+									"name": "Iniciar sesión",
+									"documentation": "**Propósito:** Dar acceso a un usuario ao sistema \n\n**Escenario principal de éxito**\n\n1. O sistema amosa a ventá de iniciar sesión\n\n2.  usuario anónimo completa a información necesaria para iniciar sesión: nome de usuario e contrasinal\n\n3. O sistema verifica os datos de acceso.\n\n**Escenario secundario**\n\n- 3a: O usuario non existe ou a contrasinal é incorrecta  \n.1: Límpanse os campos para volver intentar o acceso  \n.2: Actívase a opción de cambiar a chave de acceso \n\n**Post-condición**\n\nO usuario accederá as funcionalidades ofrecidas polo sistema"
 								}
 							]
 						},
@@ -2009,7 +2012,8 @@
 									"_parent": {
 										"$ref": "AAAAAAF3ueU4phZB3Z0="
 									},
-									"name": "Enviar feedback"
+									"name": "Enviar feedback",
+									"documentation": "**Propósito:** Enviar unha mensaxe de feedback ao correo electrónico do administrador e a bandexa do sistema\n\n**Escenario principal**\n\n1. Aparece a ventá de mensaxe na que se pode seleccionar o tipo de mensaxe (as queixas terán prioridade) e un corpo baleiro a completar ca mensaxe. \n\n2. Se se escribe algo no corpo, o botón de enviar habilitarase.\n\n3. Cando se pulse “Enviar” farase chegar a mensaxe ao correo electrónico do administrador así como unha copia á súa bandexa no sistema.\n\n**Post-condición**\n\nMostrase por pantalla que o mensaxe enviouse correctamente."
 								},
 								{
 									"_type": "UMLUseCase",
@@ -2017,7 +2021,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF3ueU4phZB3Z0="
 									},
-									"name": "Aceptar-rechazar cita",
+									"name": "Aceptar-rexeitar cita",
 									"ownedElements": [
 										{
 											"_type": "UMLExtend",
@@ -2032,7 +2036,8 @@
 												"$ref": "AAAAAAF3ubY6OXOqmKA="
 											}
 										}
-									]
+									],
+									"documentation": "**Propósito:** Aceptar ou rechazar a proposta horaria dunha cita\n\n**Pre-condición**\n\nO médico propón unha cita ao doente\n\n**Escenario principal**\n\n1. Se se pulsa o botón “Aceptar” a cita quedará fixa na súa lista de citas ata que ocurra, e notifícase ao médico da conformidade do paciente.\n\n2. Se se pulsa “Rexeitar” a cita queda pendente dunha nova proposta horaria por parte do médico, a quen tamén se notificará.\n\n**Escenario secundario**\n\n- 1a. Unha cita pendente de confirmación pasouse de fecha  \n  1. Rexeitase automaticamente para que o médico propoña unha nova data\n\n**Post-condición**\n\nA decisión é almacenada na táboa de citas do usuario e médico."
 								},
 								{
 									"_type": "UMLUseCase",
@@ -2040,7 +2045,8 @@
 									"_parent": {
 										"$ref": "AAAAAAF3ueU4phZB3Z0="
 									},
-									"name": "Acceder datos cita"
+									"name": "Acceder datos cita",
+									"documentation": "**Propósito:** Observar os datos relacionados coas citas activas do usuario\n\n**Pre-condición**\n\nO usuario ten algunha cita activa\n\n**Escenario principal**\n\n1. Amósase unha táboa coas citas pendentes dunha nova hora, de ser aceptadas/rexeitadas polo doente e aceptadas que aínda non sucederon (a modo de recordatorio).\n\n2. Cada cita pendente de ser aceptada/rexeitada terá ao seu lado dous botóns, “Aceptar” e “Rexeitar”.\n\n3. Se se pulsa algún dos dous, caso de **ACEPTAR-REXEITAR CITA**\n\n**Post-condición**\n\nMostrase por pantalla os datos das citas do usuario"
 								},
 								{
 									"_type": "UMLUseCase",
@@ -2048,7 +2054,8 @@
 									"_parent": {
 										"$ref": "AAAAAAF3ueU4phZB3Z0="
 									},
-									"name": "Ver histórico"
+									"name": "Ver histórico",
+									"documentation": "**Propósito:** Mostrar por pantalla o historial do usuario.\n\n**Pre-condición**\n\nO usuario fixo polo menos un diagnóstico\n\n**Escenario principal**\n\n1. Amósanse dúas táboas, unha de diagnósticos e outra de recomendacións\n\n2. A táboa de diagnósticos conterá: data, síntomas presentados, a doenza predita e a súa gravidade (de ser o caso).\n\n3. Ao lado de cada diagnóstico haberá un botón para indicar a satisfacción. Se se pulsa, caso INDICAR SATISFACCION DIAGNÓSTICO\n\n4. Tamén haberá botóns para seleccionar unha medicación (RECOMENDAR MEDICACIÓN LEVE) ou médico (RECOMENDAR LISTA MÉDICOS) para tratar a doenza.\n\n5. A táboa de medicamentos conterá: data, doenza e medicación seleccionada.\n\n6. Ao lado de cada medicación haberá un botón para indicar a satisfacción. Se se pulsa, caso INDICAR SATISFACCIÓN MEDICAMENTO\n\n**Post-condición**\n\nMostrase por pantalla o historial do usuario."
 								},
 								{
 									"_type": "UMLUseCase",
