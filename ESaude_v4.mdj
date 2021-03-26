@@ -4586,7 +4586,7 @@
 											"top": 542.5,
 											"width": 132,
 											"height": 13,
-											"text": "Aceptar-rechazar cita"
+											"text": "Aceptar-rexeitar cita"
 										},
 										{
 											"_type": "LabelView",
@@ -4618,7 +4618,7 @@
 									"font": "Arial;13;0",
 									"left": 61.5,
 									"top": 535.5,
-									"width": 142.22802734375,
+									"width": 142,
 									"height": 40,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF3ubbusXmqUW8="
