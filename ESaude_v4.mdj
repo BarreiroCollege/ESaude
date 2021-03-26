@@ -1589,33 +1589,6 @@
 								},
 								{
 									"_type": "UMLAssociation",
-									"_id": "AAAAAAF3ubgbzZH/IHY=",
-									"_parent": {
-										"$ref": "AAAAAAF3uaWqxzVKAp8="
-									},
-									"end1": {
-										"_type": "UMLAssociationEnd",
-										"_id": "AAAAAAF3ubgbzZIAWYI=",
-										"_parent": {
-											"$ref": "AAAAAAF3ubgbzZH/IHY="
-										},
-										"reference": {
-											"$ref": "AAAAAAF3uaWqxzVKAp8="
-										}
-									},
-									"end2": {
-										"_type": "UMLAssociationEnd",
-										"_id": "AAAAAAF3ubgbzZIB+bY=",
-										"_parent": {
-											"$ref": "AAAAAAF3ubgbzZH/IHY="
-										},
-										"reference": {
-											"$ref": "AAAAAAF3ubdq/oNEaUk="
-										}
-									}
-								},
-								{
-									"_type": "UMLAssociation",
 									"_id": "AAAAAAF3ubgiK5MFoPs=",
 									"_parent": {
 										"$ref": "AAAAAAF3uaWqxzVKAp8="
@@ -1919,188 +1892,6 @@
 							"documentation": "Só é necesario que interveña un dos actores (mesmo caso de uso para ambos, pero só lle afecta a un)."
 						},
 						{
-							"_type": "UMLUseCase",
-							"_id": "AAAAAAF3uaz6y0r1UYo=",
-							"_parent": {
-								"$ref": "AAAAAAF3ubMSP0Va5VQ="
-							},
-							"name": "Enviar feedback"
-						},
-						{
-							"_type": "UMLUseCase",
-							"_id": "AAAAAAF3ua7ArlkjkEI=",
-							"_parent": {
-								"$ref": "AAAAAAF3ubMSP0Va5VQ="
-							},
-							"name": "Ver histórico"
-						},
-						{
-							"_type": "UMLUseCase",
-							"_id": "AAAAAAF3ua+Ic2YQMEg=",
-							"_parent": {
-								"$ref": "AAAAAAF3ubMSP0Va5VQ="
-							},
-							"name": "Engadir ou borrar usuarios"
-						},
-						{
-							"_type": "UMLUseCase",
-							"_id": "AAAAAAF3ubY6OXOqmKA=",
-							"_parent": {
-								"$ref": "AAAAAAF3ubMSP0Va5VQ="
-							},
-							"name": "Acceder datos cita"
-						},
-						{
-							"_type": "UMLUseCase",
-							"_id": "AAAAAAF3ubZjcnRfjCc=",
-							"_parent": {
-								"$ref": "AAAAAAF3ubMSP0Va5VQ="
-							},
-							"name": "Aceptar-rechazar cita",
-							"ownedElements": [
-								{
-									"_type": "UMLExtend",
-									"_id": "AAAAAAF33dCv5t+pIeQ=",
-									"_parent": {
-										"$ref": "AAAAAAF3ubZjcnRfjCc="
-									},
-									"source": {
-										"$ref": "AAAAAAF3ubZjcnRfjCc="
-									},
-									"target": {
-										"$ref": "AAAAAAF3ubY6OXOqmKA="
-									}
-								}
-							]
-						},
-						{
-							"_type": "UMLUseCase",
-							"_id": "AAAAAAF3ubdYr4E5tq8=",
-							"_parent": {
-								"$ref": "AAAAAAF3ubMSP0Va5VQ="
-							},
-							"name": "Aceptar-rechazar doentes"
-						},
-						{
-							"_type": "UMLUseCase",
-							"_id": "AAAAAAF3ubdq/oNEaUk=",
-							"_parent": {
-								"$ref": "AAAAAAF3ubMSP0Va5VQ="
-							},
-							"name": "Aceptar doente",
-							"ownedElements": [
-								{
-									"_type": "UMLInclude",
-									"_id": "AAAAAAF33aG/SOUqGdc=",
-									"_parent": {
-										"$ref": "AAAAAAF3ubdq/oNEaUk="
-									},
-									"source": {
-										"$ref": "AAAAAAF3ubdq/oNEaUk="
-									},
-									"target": {
-										"$ref": "AAAAAAF3ubeWMIWYCqI="
-									}
-								},
-								{
-									"_type": "UMLExtend",
-									"_id": "AAAAAAF33cGZVclXBa0=",
-									"_parent": {
-										"$ref": "AAAAAAF3ubdq/oNEaUk="
-									},
-									"source": {
-										"$ref": "AAAAAAF3ubdq/oNEaUk="
-									},
-									"target": {
-										"$ref": "AAAAAAF3ubdYr4E5tq8="
-									}
-								}
-							]
-						},
-						{
-							"_type": "UMLUseCase",
-							"_id": "AAAAAAF3ubeHToRuJRE=",
-							"_parent": {
-								"$ref": "AAAAAAF3ubMSP0Va5VQ="
-							},
-							"name": "Acceder lista citas"
-						},
-						{
-							"_type": "UMLUseCase",
-							"_id": "AAAAAAF3ubeWMIWYCqI=",
-							"_parent": {
-								"$ref": "AAAAAAF3ubMSP0Va5VQ="
-							},
-							"name": "Propoñer hora cita",
-							"ownedElements": [
-								{
-									"_type": "UMLExtend",
-									"_id": "AAAAAAF33aHhhOXj86M=",
-									"_parent": {
-										"$ref": "AAAAAAF3ubeWMIWYCqI="
-									},
-									"source": {
-										"$ref": "AAAAAAF3ubeWMIWYCqI="
-									},
-									"target": {
-										"$ref": "AAAAAAF3ubeHToRuJRE="
-									}
-								},
-								{
-									"_type": "UMLExtend",
-									"_id": "AAAAAAF4R7iSuhDLtS8=",
-									"_parent": {
-										"$ref": "AAAAAAF3ubeWMIWYCqI="
-									},
-									"source": {
-										"$ref": "AAAAAAF3ubeWMIWYCqI="
-									},
-									"target": {
-										"$ref": "AAAAAAF3ubdYr4E5tq8="
-									}
-								}
-							]
-						},
-						{
-							"_type": "UMLUseCase",
-							"_id": "AAAAAAF3ubk+G6rRZac=",
-							"_parent": {
-								"$ref": "AAAAAAF3ubMSP0Va5VQ="
-							},
-							"name": "Actualizar fármacos para unha doenza"
-						},
-						{
-							"_type": "UMLUseCase",
-							"_id": "AAAAAAF3ublw9Kvm/7M=",
-							"_parent": {
-								"$ref": "AAAAAAF3ubMSP0Va5VQ="
-							},
-							"name": "Actualizar síntomas para unha doenza"
-						},
-						{
-							"_type": "UMLUseCase",
-							"_id": "AAAAAAF3ubmMt6z7EDE=",
-							"_parent": {
-								"$ref": "AAAAAAF3ubMSP0Va5VQ="
-							},
-							"name": "Responder mensaxes doentes",
-							"ownedElements": [
-								{
-									"_type": "UMLExtend",
-									"_id": "AAAAAAF33bjlXJKldrk=",
-									"_parent": {
-										"$ref": "AAAAAAF3ubmMt6z7EDE="
-									},
-									"source": {
-										"$ref": "AAAAAAF3ubmMt6z7EDE="
-									},
-									"target": {
-										"$ref": "AAAAAAF33ZLks3JgaYs="
-									}
-								}
-							]
-						},
-						{
 							"_type": "UMLPackage",
 							"_id": "AAAAAAF3udUBItK2Ey8=",
 							"_parent": {
@@ -2132,7 +1923,7 @@
 							"_parent": {
 								"$ref": "AAAAAAF3ubMSP0Va5VQ="
 							},
-							"name": "Diagnóstico",
+							"name": "Doentes",
 							"ownedElements": [
 								{
 									"_type": "UMLUseCase",
@@ -2210,167 +2001,260 @@
 											}
 										}
 									]
-								}
-							]
-						},
-						{
-							"_type": "UMLUseCase",
-							"_id": "AAAAAAF3uetwsSc4kuA=",
-							"_parent": {
-								"$ref": "AAAAAAF3ubMSP0Va5VQ="
-							},
-							"name": "Indicar satisfacción medicamento",
-							"ownedElements": [
-								{
-									"_type": "UMLInclude",
-									"_id": "AAAAAAF3ue6WvDFnJWM=",
-									"_parent": {
-										"$ref": "AAAAAAF3uetwsSc4kuA="
-									},
-									"source": {
-										"$ref": "AAAAAAF3uetwsSc4kuA="
-									},
-									"target": {
-										"$ref": "AAAAAAF3ue4XOisprdo="
-									}
 								},
 								{
-									"_type": "UMLExtend",
-									"_id": "AAAAAAF4Rs+nU80zGI8=",
+									"_type": "UMLUseCase",
+									"_id": "AAAAAAF3uaz6y0r1UYo=",
 									"_parent": {
-										"$ref": "AAAAAAF3uetwsSc4kuA="
+										"$ref": "AAAAAAF3ueU4phZB3Z0="
 									},
-									"source": {
-										"$ref": "AAAAAAF3uetwsSc4kuA="
-									},
-									"target": {
-										"$ref": "AAAAAAF3ua7ArlkjkEI="
-									}
-								}
-							]
-						},
-						{
-							"_type": "UMLUseCase",
-							"_id": "AAAAAAF3ue4XOisprdo=",
-							"_parent": {
-								"$ref": "AAAAAAF3ubMSP0Va5VQ="
-							},
-							"name": "Comprobar fiabilidade"
-						},
-						{
-							"_type": "UMLUseCase",
-							"_id": "AAAAAAF33YrEv+iZ0KM=",
-							"_parent": {
-								"$ref": "AAAAAAF3ubMSP0Va5VQ="
-							},
-							"name": "Indicar satisfacción diagnóstico",
-							"ownedElements": [
-								{
-									"_type": "UMLInclude",
-									"_id": "AAAAAAF33YvlRRCwpgw=",
-									"_parent": {
-										"$ref": "AAAAAAF33YrEv+iZ0KM="
-									},
-									"source": {
-										"$ref": "AAAAAAF33YrEv+iZ0KM="
-									},
-									"target": {
-										"$ref": "AAAAAAF3ue4XOisprdo="
-									}
+									"name": "Enviar feedback"
 								},
 								{
-									"_type": "UMLExtend",
-									"_id": "AAAAAAF4Rs+zEM2eScU=",
+									"_type": "UMLUseCase",
+									"_id": "AAAAAAF3ubZjcnRfjCc=",
 									"_parent": {
-										"$ref": "AAAAAAF33YrEv+iZ0KM="
+										"$ref": "AAAAAAF3ueU4phZB3Z0="
 									},
-									"source": {
-										"$ref": "AAAAAAF33YrEv+iZ0KM="
-									},
-									"target": {
-										"$ref": "AAAAAAF3ua7ArlkjkEI="
-									}
-								}
-							]
-						},
-						{
-							"_type": "UMLUseCase",
-							"_id": "AAAAAAF33ZLks3JgaYs=",
-							"_parent": {
-								"$ref": "AAAAAAF3ubMSP0Va5VQ="
-							},
-							"name": "Ver mensaxes doentes"
-						},
-						{
-							"_type": "UMLUseCase",
-							"_id": "AAAAAAF33aC77L1fV58=",
-							"_parent": {
-								"$ref": "AAAAAAF3ubMSP0Va5VQ="
-							},
-							"name": "Rechazar doente",
-							"ownedElements": [
-								{
-									"_type": "UMLAssociation",
-									"_id": "AAAAAAF33aEsLswEpTI=",
-									"_parent": {
-										"$ref": "AAAAAAF33aC77L1fV58="
-									},
-									"end1": {
-										"_type": "UMLAssociationEnd",
-										"_id": "AAAAAAF33aEsLswFSLE=",
-										"_parent": {
-											"$ref": "AAAAAAF33aEsLswEpTI="
-										},
-										"reference": {
-											"$ref": "AAAAAAF33aC77L1fV58="
+									"name": "Aceptar-rechazar cita",
+									"ownedElements": [
+										{
+											"_type": "UMLExtend",
+											"_id": "AAAAAAF33dCv5t+pIeQ=",
+											"_parent": {
+												"$ref": "AAAAAAF3ubZjcnRfjCc="
+											},
+											"source": {
+												"$ref": "AAAAAAF3ubZjcnRfjCc="
+											},
+											"target": {
+												"$ref": "AAAAAAF3ubY6OXOqmKA="
+											}
 										}
-									},
-									"end2": {
-										"_type": "UMLAssociationEnd",
-										"_id": "AAAAAAF33aEsLswGtvY=",
-										"_parent": {
-											"$ref": "AAAAAAF33aEsLswEpTI="
-										},
-										"reference": {
-											"$ref": "AAAAAAF3uaWqxzVKAp8="
-										}
-									}
+									]
 								},
 								{
-									"_type": "UMLExtend",
-									"_id": "AAAAAAF33cHiL86w+Ko=",
+									"_type": "UMLUseCase",
+									"_id": "AAAAAAF3ubY6OXOqmKA=",
 									"_parent": {
-										"$ref": "AAAAAAF33aC77L1fV58="
+										"$ref": "AAAAAAF3ueU4phZB3Z0="
 									},
-									"source": {
-										"$ref": "AAAAAAF33aC77L1fV58="
+									"name": "Acceder datos cita"
+								},
+								{
+									"_type": "UMLUseCase",
+									"_id": "AAAAAAF3ua7ArlkjkEI=",
+									"_parent": {
+										"$ref": "AAAAAAF3ueU4phZB3Z0="
 									},
-									"target": {
-										"$ref": "AAAAAAF3ubdYr4E5tq8="
-									}
+									"name": "Ver histórico"
+								},
+								{
+									"_type": "UMLUseCase",
+									"_id": "AAAAAAF33YrEv+iZ0KM=",
+									"_parent": {
+										"$ref": "AAAAAAF3ueU4phZB3Z0="
+									},
+									"name": "Indicar satisfacción diagnóstico",
+									"ownedElements": [
+										{
+											"_type": "UMLInclude",
+											"_id": "AAAAAAF33YvlRRCwpgw=",
+											"_parent": {
+												"$ref": "AAAAAAF33YrEv+iZ0KM="
+											},
+											"source": {
+												"$ref": "AAAAAAF33YrEv+iZ0KM="
+											},
+											"target": {
+												"$ref": "AAAAAAF3ue4XOisprdo="
+											}
+										},
+										{
+											"_type": "UMLExtend",
+											"_id": "AAAAAAF4Rs+zEM2eScU=",
+											"_parent": {
+												"$ref": "AAAAAAF33YrEv+iZ0KM="
+											},
+											"source": {
+												"$ref": "AAAAAAF33YrEv+iZ0KM="
+											},
+											"target": {
+												"$ref": "AAAAAAF3ua7ArlkjkEI="
+											}
+										}
+									]
+								},
+								{
+									"_type": "UMLUseCase",
+									"_id": "AAAAAAF3uetwsSc4kuA=",
+									"_parent": {
+										"$ref": "AAAAAAF3ueU4phZB3Z0="
+									},
+									"name": "Indicar satisfacción medicamento",
+									"ownedElements": [
+										{
+											"_type": "UMLInclude",
+											"_id": "AAAAAAF3ue6WvDFnJWM=",
+											"_parent": {
+												"$ref": "AAAAAAF3uetwsSc4kuA="
+											},
+											"source": {
+												"$ref": "AAAAAAF3uetwsSc4kuA="
+											},
+											"target": {
+												"$ref": "AAAAAAF3ue4XOisprdo="
+											}
+										},
+										{
+											"_type": "UMLExtend",
+											"_id": "AAAAAAF4Rs+nU80zGI8=",
+											"_parent": {
+												"$ref": "AAAAAAF3uetwsSc4kuA="
+											},
+											"source": {
+												"$ref": "AAAAAAF3uetwsSc4kuA="
+											},
+											"target": {
+												"$ref": "AAAAAAF3ua7ArlkjkEI="
+											}
+										}
+									]
+								},
+								{
+									"_type": "UMLUseCase",
+									"_id": "AAAAAAF3ue4XOisprdo=",
+									"_parent": {
+										"$ref": "AAAAAAF3ueU4phZB3Z0="
+									},
+									"name": "Comprobar fiabilidade"
 								}
 							]
 						},
 						{
-							"_type": "UMLUseCase",
-							"_id": "AAAAAAF4AfdPO6YH7xI=",
+							"_type": "UMLPackage",
+							"_id": "AAAAAAF4bfIC8lw4/D8=",
 							"_parent": {
 								"$ref": "AAAAAAF3ubMSP0Va5VQ="
 							},
-							"name": "Concretar síntomas",
+							"name": "Administradores",
 							"ownedElements": [
 								{
-									"_type": "UMLExtend",
-									"_id": "AAAAAAF4AfhZj6q0GJQ=",
+									"_type": "UMLUseCase",
+									"_id": "AAAAAAF3ubmMt6z7EDE=",
 									"_parent": {
-										"$ref": "AAAAAAF4AfdPO6YH7xI="
+										"$ref": "AAAAAAF4bfIC8lw4/D8="
 									},
-									"source": {
-										"$ref": "AAAAAAF4AfdPO6YH7xI="
+									"name": "Responder mensaxes doentes",
+									"ownedElements": [
+										{
+											"_type": "UMLExtend",
+											"_id": "AAAAAAF33bjlXJKldrk=",
+											"_parent": {
+												"$ref": "AAAAAAF3ubmMt6z7EDE="
+											},
+											"source": {
+												"$ref": "AAAAAAF3ubmMt6z7EDE="
+											},
+											"target": {
+												"$ref": "AAAAAAF33ZLks3JgaYs="
+											}
+										}
+									]
+								},
+								{
+									"_type": "UMLUseCase",
+									"_id": "AAAAAAF33ZLks3JgaYs=",
+									"_parent": {
+										"$ref": "AAAAAAF4bfIC8lw4/D8="
 									},
-									"target": {
-										"$ref": "AAAAAAF3udPCdcmbS4E="
-									}
+									"name": "Ver mensaxes doentes"
+								},
+								{
+									"_type": "UMLUseCase",
+									"_id": "AAAAAAF3ublw9Kvm/7M=",
+									"_parent": {
+										"$ref": "AAAAAAF4bfIC8lw4/D8="
+									},
+									"name": "Actualizar síntomas para unha doenza"
+								},
+								{
+									"_type": "UMLUseCase",
+									"_id": "AAAAAAF3ubk+G6rRZac=",
+									"_parent": {
+										"$ref": "AAAAAAF4bfIC8lw4/D8="
+									},
+									"name": "Actualizar fármacos para unha doenza"
+								},
+								{
+									"_type": "UMLUseCase",
+									"_id": "AAAAAAF3ua+Ic2YQMEg=",
+									"_parent": {
+										"$ref": "AAAAAAF4bfIC8lw4/D8="
+									},
+									"name": "Engadir ou borrar usuarios"
+								}
+							]
+						},
+						{
+							"_type": "UMLPackage",
+							"_id": "AAAAAAF4bfWKH3g3fw0=",
+							"_parent": {
+								"$ref": "AAAAAAF3ubMSP0Va5VQ="
+							},
+							"name": "Médicos",
+							"ownedElements": [
+								{
+									"_type": "UMLUseCase",
+									"_id": "AAAAAAF3ubeHToRuJRE=",
+									"_parent": {
+										"$ref": "AAAAAAF4bfWKH3g3fw0="
+									},
+									"name": "Acceder lista citas"
+								},
+								{
+									"_type": "UMLUseCase",
+									"_id": "AAAAAAF3ubdYr4E5tq8=",
+									"_parent": {
+										"$ref": "AAAAAAF4bfWKH3g3fw0="
+									},
+									"name": "Aceptar-rechazar doentes"
+								},
+								{
+									"_type": "UMLUseCase",
+									"_id": "AAAAAAF3ubeWMIWYCqI=",
+									"_parent": {
+										"$ref": "AAAAAAF4bfWKH3g3fw0="
+									},
+									"name": "Propoñer hora cita",
+									"ownedElements": [
+										{
+											"_type": "UMLExtend",
+											"_id": "AAAAAAF33aHhhOXj86M=",
+											"_parent": {
+												"$ref": "AAAAAAF3ubeWMIWYCqI="
+											},
+											"source": {
+												"$ref": "AAAAAAF3ubeWMIWYCqI="
+											},
+											"target": {
+												"$ref": "AAAAAAF3ubeHToRuJRE="
+											}
+										},
+										{
+											"_type": "UMLExtend",
+											"_id": "AAAAAAF4R7iSuhDLtS8=",
+											"_parent": {
+												"$ref": "AAAAAAF3ubeWMIWYCqI="
+											},
+											"source": {
+												"$ref": "AAAAAAF3ubeWMIWYCqI="
+											},
+											"target": {
+												"$ref": "AAAAAAF3ubdYr4E5tq8="
+											}
+										}
+									]
 								}
 							]
 						}
@@ -2620,7 +2504,7 @@
 											"top": 357.5,
 											"width": 127,
 											"height": 13,
-											"text": "(from Diagnóstico)"
+											"text": "(from Doentes)"
 										},
 										{
 											"_type": "LabelView",
@@ -3092,7 +2976,7 @@
 											"top": 781.5,
 											"width": 117,
 											"height": 13,
-											"text": "(from Casos de uso)"
+											"text": "(from Doentes)"
 										},
 										{
 											"_type": "LabelView",
@@ -3111,7 +2995,7 @@
 									"font": "Arial;13;0",
 									"left": 442.5,
 									"top": 759.5,
-									"width": 127.76171875,
+									"width": 127,
 									"height": 40,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF3ubT0L19HCG8="
@@ -3547,9 +3431,9 @@
 												"$ref": "AAAAAAF3ubT5R1/kFlw="
 											},
 											"font": "Arial;13;1",
-											"left": 759.5,
+											"left": 765.5,
 											"top": 766.5,
-											"width": 117,
+											"width": 144,
 											"height": 13,
 											"text": "Ver histórico"
 										},
@@ -3560,11 +3444,11 @@
 												"$ref": "AAAAAAF3ubT5R1/kFlw="
 											},
 											"font": "Arial;13;0",
-											"left": 759.5,
+											"left": 765.5,
 											"top": 781.5,
-											"width": 117,
+											"width": 144,
 											"height": 13,
-											"text": "(from Casos de uso)"
+											"text": "(from Doentes)"
 										},
 										{
 											"_type": "LabelView",
@@ -3581,9 +3465,9 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 754.5,
+									"left": 760.5,
 									"top": 759.5,
-									"width": 127.76171875,
+									"width": 154,
 									"height": 40,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF3ubT5R1/lPyM="
@@ -3683,7 +3567,7 @@
 							"containerChangeable": true,
 							"left": 728,
 							"top": 752,
-							"width": 180,
+							"width": 219,
 							"height": 56,
 							"showNamespace": true,
 							"nameCompartment": {
@@ -3728,8 +3612,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 764,
-									"top": 564,
+									"left": 775,
+									"top": 563,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -3749,8 +3633,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 778,
-									"top": 559,
+									"left": 789,
+									"top": 558,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -3770,8 +3654,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 735,
-									"top": 573,
+									"left": 746,
+									"top": 574,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -3791,8 +3675,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 715,
-									"top": 413,
+									"left": 718,
+									"top": 412,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
@@ -3812,8 +3696,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 728,
-									"top": 411,
+									"left": 731,
+									"top": 409,
 									"height": 13,
 									"alpha": 0.7853981633974483,
 									"distance": 40,
@@ -3833,7 +3717,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 687,
+									"left": 690,
 									"top": 417,
 									"height": 13,
 									"alpha": -0.5235987755982988,
@@ -3854,7 +3738,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 814,
+									"left": 831,
 									"top": 715,
 									"height": 13,
 									"alpha": -0.5235987755982988,
@@ -3874,8 +3758,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 826,
-									"top": 709,
+									"left": 843,
+									"top": 708,
 									"height": 13,
 									"alpha": -0.7853981633974483,
 									"distance": 40,
@@ -3894,8 +3778,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 789,
-									"top": 728,
+									"left": 807,
+									"top": 729,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
@@ -3944,7 +3828,7 @@
 								"$ref": "AAAAAAF3ubRSgFqTl+A="
 							},
 							"lineStyle": 1,
-							"points": "693:399;808:751",
+							"points": "695:399;827:751",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF3ubT5R1/vN1k="
@@ -4036,7 +3920,7 @@
 											"top": 509.5,
 											"width": 207,
 											"height": 13,
-											"text": "(from Diagnóstico)"
+											"text": "(from Doentes)"
 										},
 										{
 											"_type": "LabelView",
@@ -4235,7 +4119,7 @@
 											"top": 661.5,
 											"width": 117,
 											"height": 13,
-											"text": "(from Casos de uso)"
+											"text": "(from Doentes)"
 										},
 										{
 											"_type": "LabelView",
@@ -4254,7 +4138,7 @@
 									"font": "Arial;13;0",
 									"left": 274.5,
 									"top": 639.5,
-									"width": 127.76171875,
+									"width": 127,
 									"height": 40,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF3ubboUHkMD38="
@@ -4707,7 +4591,7 @@
 											"top": 557.5,
 											"width": 132,
 											"height": 13,
-											"text": "(from Casos de uso)"
+											"text": "(from Doentes)"
 										},
 										{
 											"_type": "LabelView",
@@ -6343,7 +6227,7 @@
 											"top": 973.5,
 											"width": 182,
 											"height": 13,
-											"text": "(from Diagnóstico)"
+											"text": "(from Doentes)"
 										},
 										{
 											"_type": "LabelView",
@@ -6542,7 +6426,7 @@
 											"top": 733.5,
 											"width": 226,
 											"height": 13,
-											"text": "(from Casos de uso)"
+											"text": "(from Doentes)"
 										},
 										{
 											"_type": "LabelView",
@@ -6741,7 +6625,7 @@
 											"top": 821.5,
 											"width": 137,
 											"height": 13,
-											"text": "(from Casos de uso)"
+											"text": "(from Doentes)"
 										},
 										{
 											"_type": "LabelView",
@@ -7035,7 +6919,7 @@
 											"top": 901.5,
 											"width": 216,
 											"height": 13,
-											"text": "(from Casos de uso)"
+											"text": "(from Doentes)"
 										},
 										{
 											"_type": "LabelView",
@@ -7484,8 +7368,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 986,
-									"top": 767,
+									"left": 1007,
+									"top": 766,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -7504,8 +7388,8 @@
 										"$ref": "AAAAAAF4Rs+nU80zGI8="
 									},
 									"font": "Arial;13;0",
-									"left": 962,
-									"top": 782,
+									"left": 983,
+									"top": 781,
 									"width": 53.49169921875,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -7527,8 +7411,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 983,
-									"top": 738,
+									"left": 1002,
+									"top": 737,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -7546,7 +7430,7 @@
 								"$ref": "AAAAAAF3ue8yjDeeUyQ="
 							},
 							"lineStyle": 1,
-							"points": "1063:750;908:768",
+							"points": "1063:751;947:766",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF4Rs+nVM02cJY="
@@ -7579,8 +7463,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1013,
-									"top": 846,
+									"left": 1026,
+									"top": 847,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -7599,8 +7483,8 @@
 										"$ref": "AAAAAAF4Rs+zEM2eScU="
 									},
 									"font": "Arial;13;0",
-									"left": 983,
-									"top": 860,
+									"left": 996,
+									"top": 861,
 									"width": 53.49169921875,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -7622,8 +7506,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1022,
-									"top": 817,
+									"left": 1035,
+									"top": 818,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -7641,7 +7525,7 @@
 								"$ref": "AAAAAAF33Y2iICm9fa8="
 							},
 							"lineStyle": 1,
-							"points": "1128:871;908:806",
+							"points": "1133:871;930:808",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF4Rs+zEM2hD30="
@@ -7674,7 +7558,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 993,
+									"left": 1003,
 									"top": 648,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -7694,8 +7578,8 @@
 										"$ref": "AAAAAAF4bdB/ZQrsKdM="
 									},
 									"font": "Arial;13;0",
-									"left": 976,
-									"top": 660,
+									"left": 987,
+									"top": 659,
 									"width": 53.49169921875,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -7717,7 +7601,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 974,
+									"left": 984,
 									"top": 625,
 									"height": 13,
 									"alpha": -1.5707963267948966,
@@ -7736,7 +7620,7 @@
 								"$ref": "AAAAAAF3ubUA/mCN4f4="
 							},
 							"lineStyle": 1,
-							"points": "1117:536;852:751",
+							"points": "1119:536;870:751",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF4bdB/ZgrvlVw="
@@ -7769,8 +7653,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 796,
-									"top": 868,
+									"left": 806,
+									"top": 866,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -7789,8 +7673,8 @@
 										"$ref": "AAAAAAF4bdCnFQ2xMOE="
 									},
 									"font": "Arial;13;0",
-									"left": 755,
-									"top": 867,
+									"left": 765,
+									"top": 864,
 									"width": 53.49169921875,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -7812,8 +7696,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 825,
-									"top": 869,
+									"left": 835,
+									"top": 871,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -7831,7 +7715,7 @@
 								"$ref": "AAAAAAF3udyKMvjc+84="
 							},
 							"lineStyle": 1,
-							"points": "808:943;815:808",
+							"points": "811:943;832:808",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF4bdCnFg20jmU="
@@ -8089,7 +7973,7 @@
 											"top": 85.5,
 											"width": 158,
 											"height": 13,
-											"text": "(from Casos de uso)"
+											"text": "(from Médicos)"
 										},
 										{
 											"_type": "LabelView",
@@ -8561,7 +8445,7 @@
 											"top": 269.5,
 											"width": 117,
 											"height": 13,
-											"text": "(from Casos de uso)"
+											"text": "(from Médicos)"
 										},
 										{
 											"_type": "LabelView",
@@ -8580,7 +8464,7 @@
 									"font": "Arial;13;0",
 									"left": 530.5,
 									"top": 247.5,
-									"width": 127.76171875,
+									"width": 127,
 									"height": 40,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF3ubjlTqJMJ+I="
@@ -9033,7 +8917,7 @@
 											"top": 165.5,
 											"width": 117,
 											"height": 13,
-											"text": "(from Casos de uso)"
+											"text": "(from Médicos)"
 										},
 										{
 											"_type": "LabelView",
@@ -9052,7 +8936,7 @@
 									"font": "Arial;13;0",
 									"left": 674.5,
 									"top": 143.5,
-									"width": 127.76171875,
+									"width": 127,
 									"height": 40,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF3ubjq06LSvFg="
@@ -11506,7 +11390,7 @@
 											"top": 72.5,
 											"width": 167,
 											"height": 13,
-											"text": "(from Casos de uso)"
+											"text": "(from Administradores)"
 										},
 										{
 											"_type": "LabelView",
@@ -11962,7 +11846,7 @@
 											"top": 141.5,
 											"width": 296,
 											"height": 13,
-											"text": "(from Casos de uso)"
+											"text": "(from Administradores)"
 										},
 										{
 											"_type": "LabelView",
@@ -12430,7 +12314,7 @@
 											"top": 213.5,
 											"width": 265,
 											"height": 13,
-											"text": "(from Casos de uso)"
+											"text": "(from Administradores)"
 										},
 										{
 											"_type": "LabelView",
@@ -12898,7 +12782,7 @@
 											"top": 397.5,
 											"width": 187,
 											"height": 13,
-											"text": "(from Casos de uso)"
+											"text": "(from Administradores)"
 										},
 										{
 											"_type": "LabelView",
@@ -13097,7 +12981,7 @@
 											"top": 285.5,
 											"width": 139,
 											"height": 13,
-											"text": "(from Casos de uso)"
+											"text": "(from Administradores)"
 										},
 										{
 											"_type": "LabelView",
@@ -44508,9 +44392,9 @@
 														"$ref": "AAAAAAF4Ja8IP1JhntM="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 13,
-													"width": 79.0380859375,
+													"width": 72.8427734375,
 													"height": 13,
 													"text": "Iniciar Sesión"
 												},
@@ -44523,7 +44407,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -45240,7 +45124,7 @@
 													},
 													"visible": false,
 													"font": "Arial;13;0",
-													"left": 56.72998046875,
+													"left": 55.99365234375,
 													"top": 317,
 													"width": 1,
 													"height": 13
@@ -45254,7 +45138,7 @@
 													"font": "Arial;13;1",
 													"left": 37,
 													"top": 317,
-													"width": 14.72998046875,
+													"width": 13.99365234375,
 													"height": 13,
 													"text": "alt"
 												},
@@ -45287,7 +45171,7 @@
 																	"font": "Arial;13;0",
 																	"left": 52,
 																	"top": 350,
-																	"width": 320.861328125,
+																	"width": 293.5283203125,
 																	"height": 13,
 																	"text": "[Usuario non existe, suspendido ou contrasinal inválido]"
 																}
@@ -45320,7 +45204,7 @@
 																	"font": "Arial;13;0",
 																	"left": 52,
 																	"top": 440,
-																	"width": 102.5908203125,
+																	"width": 95.646484375,
 																	"height": 13,
 																	"text": "[Usuario correcto]"
 																}
@@ -46061,9 +45945,9 @@
 														"$ref": "AAAAAAF4JgoEDVoewik="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 13,
-													"width": 48.67724609375,
+													"width": 45.052734375,
 													"height": 13,
 													"text": "Rexistro"
 												},
@@ -46076,7 +45960,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -46793,7 +46677,7 @@
 													},
 													"visible": false,
 													"font": "Arial;13;0",
-													"left": 56.72998046875,
+													"left": 55.99365234375,
 													"top": 317,
 													"width": 1,
 													"height": 13
@@ -46807,7 +46691,7 @@
 													"font": "Arial;13;1",
 													"left": 37,
 													"top": 317,
-													"width": 14.72998046875,
+													"width": 13.99365234375,
 													"height": 13,
 													"text": "alt"
 												},
@@ -46840,7 +46724,7 @@
 																	"font": "Arial;13;0",
 																	"left": 52,
 																	"top": 350,
-																	"width": 347.57861328125,
+																	"width": 313.345703125,
 																	"height": 13,
 																	"text": "[Usuario xa existe, contrasinal inseguro, datos incoherentes]"
 																}
@@ -46873,7 +46757,7 @@
 																	"font": "Arial;13;0",
 																	"left": 52,
 																	"top": 440,
-																	"width": 102.5908203125,
+																	"width": 95.646484375,
 																	"height": 13,
 																	"text": "[Usuario correcto]"
 																}
