@@ -2192,7 +2192,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF4bfIC8lw4/D8="
 									},
-									"name": "Engadir ou borrar usuarios"
+									"name": "Xestionar usuarios"
 								}
 							]
 						},
@@ -11377,7 +11377,7 @@
 											"top": 57.5,
 											"width": 167,
 											"height": 13,
-											"text": "Engadir ou borrar usuarios"
+											"text": "Xestionar usuarios"
 										},
 										{
 											"_type": "LabelView",
@@ -11407,7 +11407,7 @@
 									"font": "Arial;13;0",
 									"left": 625,
 									"top": 50.5,
-									"width": 177.58447265625,
+									"width": 177,
 									"height": 40,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF3ucvCy7Ju8Rg="
@@ -32494,7 +32494,7 @@
 									"visible": false,
 									"font": "Arial;12;0",
 									"containerExtending": true,
-									"left": 343,
+									"left": 347,
 									"top": 634,
 									"height": 12,
 									"alpha": 1.5707963267948966,
@@ -32516,7 +32516,7 @@
 									"visible": null,
 									"font": "Arial;12;0",
 									"containerExtending": true,
-									"left": 343,
+									"left": 347,
 									"top": 619,
 									"height": 12,
 									"alpha": 1.5707963267948966,
@@ -32538,7 +32538,7 @@
 									"visible": false,
 									"font": "Arial;12;0",
 									"containerExtending": true,
-									"left": 343,
+									"left": 347,
 									"top": 664,
 									"height": 12,
 									"alpha": -1.5707963267948966,
