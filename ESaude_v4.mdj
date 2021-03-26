@@ -1905,7 +1905,8 @@
 									"_parent": {
 										"$ref": "AAAAAAF3udUBItK2Ey8="
 									},
-									"name": "Rexistrarse"
+									"name": "Rexistrarse",
+									"documentation": "**Escenario principal de éxito:**\n\n1. O sistema amosa a ventá de rexistro. \n\n2. O usuario anónimo completa a información necesaria para rexistrarse (data de nacemento, xénero, alerxias, outras doenzas diagnosticadas, nome de usuario, contrasinal) \n\n3. O sistema autoriza o rexistro. \n\n4. O sistema confirma ao usuario anónimo que está rexistrado. \n\n**Escenario secundario:**\n\n- 3a: Hai un erro nos datos do rexistro.  \n  .1: Indícanse os campos incorrectos para a súa corrección \n\n**Post-condición:**\n\nA información dun novo usuario é rexistrada no sistema."
 								},
 								{
 									"_type": "UMLUseCase",
