@@ -57,13 +57,25 @@
         z-index: 2;
     }
 
-    .form-signup input[type="email"] {
+    .form-signup #inputUsername {
         margin-bottom: -1px;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
     }
 
     .form-signup input[type="password"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .form-signup #inputName {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .form-signup #inputEmail {
         margin-bottom: 10px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
@@ -76,10 +88,26 @@
     }
 
     .form-signup select {
+        margin-bottom: -1px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        height: 46px;
+    }
+
+    .form-signup #inputAlergies {
+        margin-bottom: -1px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .form-signup #inputDiagnostics {
         margin-bottom: 10px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
-        height: 46px;
     }
 </style>
 
@@ -92,8 +120,8 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="form-label-group">
-                    <label for="inputEmail" class="sr-only">Nome de usuario</label>
-                    <input type="email" id="inputEmail" class="form-control" placeholder="Nome de usuario" required autofocus>
+                    <label for="inputUsername" class="sr-only">Nome de usuario</label>
+                    <input type="text" id="inputUsername" class="form-control" placeholder="Nome de usuario" required autofocus>
                 </div>
         
                 <div class="form-label-group">
@@ -106,6 +134,11 @@
                 <div class="form-label-group">
                     <label for="inputName" class="sr-only">Nome completo</label>
                     <input type="text" id="inputName" class="form-control" placeholder="Nome completo" required>
+                </div>
+        
+                <div class="form-label-group">
+                    <label for="inputEmail" class="sr-only">Correo electrónico</label>
+                    <input type="email" id="inputEmail" class="form-control" placeholder="Correo electrónico" required>
                 </div>
             </div>
             <div class="col-md-6">
@@ -121,6 +154,16 @@
                         <option value="F">Femenino</option>
                         <option value="O">Outro</option>
                       </select>
+                </div>
+        
+                <div class="form-label-group">
+                    <label for="inputAlergies" class="sr-only">Alerxias</label>
+                    <input type="text" id="inputAlergies" class="form-control" placeholder="Alerxias">
+                </div>
+        
+                <div class="form-label-group">
+                    <label for="inputDiagnostics" class="sr-only">Outros diagnósticos</label>
+                    <textarea id="inputDiagnostics" class="form-control" placeholder="Outros diagnósticos"></textarea>
                 </div>
             </div>
         </div>
