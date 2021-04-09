@@ -170,7 +170,7 @@
 
         <div class="mb-3"></div>
 
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Continuar</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" id="submit">Continuar</button>
         
         <div class="row">
             <div class="col-lg-6"></div>
@@ -192,6 +192,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        document.getElementById("submit").addEventListener("click", (e) => {
+            e.preventDefault();
+            sessionStorage.setItem("rexistro", "si");
+            let a = document.createElement("a");
+            a.href = "acceso.html";
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+        });
+    </script>
 </body>
 
 </html>
