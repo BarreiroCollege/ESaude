@@ -68,6 +68,19 @@
         border-top-left-radius: 0;
         border-top-right-radius: 0;
     }
+
+    .form-signup #inputBirthday {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .form-signup select {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        height: 46px;
+    }
 </style>
 
 <body class="text-center">
@@ -91,14 +104,23 @@
                 <div class="mt-3"></div>
         
                 <div class="form-label-group">
-                    <label for="inputPassword" class="sr-only">Nome completo</label>
-                    <input type="text" id="inputPassword" class="form-control" placeholder="Nome completo" required>
+                    <label for="inputName" class="sr-only">Nome completo</label>
+                    <input type="text" id="inputName" class="form-control" placeholder="Nome completo" required>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-label-group">
-                    <label for="inputPassword" class="sr-only">Data de nacemento</label>
-                    <input type="text" id="inputPassword" class="form-control" placeholder="Nome completo" required>
+                    <label for="inputBirthday" class="sr-only">Data de nacemento</label>
+                    <input type="text" id="inputBirthday" class="form-control" placeholder="Data de nacemento (DD/MM/AAAA)" required>
+                </div>
+
+                <div class="form-label-group">
+                    <select class="browser-default custom-select">
+                        <option selected="" disabled="">Xénero</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                        <option value="O">Outro</option>
+                      </select>
                 </div>
             </div>
         </div>
