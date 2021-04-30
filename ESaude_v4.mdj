@@ -275,7 +275,7 @@
 									"font": "Arial;13;0",
 									"left": 548,
 									"top": 51.5,
-									"width": 159.54443359375,
+									"width": 159,
 									"height": 40,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF3uctE4qxXbOo="
@@ -747,7 +747,7 @@
 									"font": "Arial;13;0",
 									"left": 532,
 									"top": 187.5,
-									"width": 159.54443359375,
+									"width": 159,
 									"height": 40,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF3uctE4qxuCqQ="
@@ -1940,7 +1940,7 @@
 							"_parent": {
 								"$ref": "AAAAAAF3ubMSP0Va5VQ="
 							},
-							"name": "Engadir ou borrar usuarios"
+							"name": "Xestionar usuarios"
 						},
 						{
 							"_type": "UMLUseCase",
@@ -11495,7 +11495,7 @@
 											"top": 46.5,
 											"width": 167,
 											"height": 13,
-											"text": "Engadir ou borrar usuarios"
+											"text": "Xestionar usuarios"
 										},
 										{
 											"_type": "LabelView",
@@ -11527,7 +11527,7 @@
 									"font": "Arial;13;0",
 									"left": 517,
 									"top": 39.5,
-									"width": 177.58447265625,
+									"width": 177,
 									"height": 40,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF3ucvCy7Ju8Rg="
@@ -55623,7 +55623,8 @@
 							},
 							"name": "conexion",
 							"visibility": "protected",
-							"isStatic": true
+							"isStatic": true,
+							"type": ""
 						}
 					],
 					"operations": [
@@ -55930,7 +55931,8 @@
 								"$ref": "AAAAAAF4/bQ4fGGVNkQ="
 							},
 							"name": "daos",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -55939,7 +55941,8 @@
 								"$ref": "AAAAAAF4/bQ4fGGVNkQ="
 							},
 							"name": "usuario",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					],
 					"operations": [
@@ -60178,7 +60181,8 @@
 								"$ref": "AAAAAAF4/cTK/WWIqzE="
 							},
 							"name": "tipoSatisfaccion",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					],
 					"operations": [
@@ -60243,9 +60247,9 @@
 														"$ref": "AAAAAAF4Ja8IP1JhntM="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 13,
-													"width": 79.0380859375,
+													"width": 72.8427734375,
 													"height": 13,
 													"text": "Iniciar Sesión"
 												},
@@ -60258,7 +60262,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -60975,7 +60979,7 @@
 													},
 													"visible": false,
 													"font": "Arial;13;0",
-													"left": 56.72998046875,
+													"left": 55.99365234375,
 													"top": 317,
 													"width": 1,
 													"height": 13
@@ -60989,7 +60993,7 @@
 													"font": "Arial;13;1",
 													"left": 37,
 													"top": 317,
-													"width": 14.72998046875,
+													"width": 13.99365234375,
 													"height": 13,
 													"text": "alt"
 												},
@@ -61022,7 +61026,7 @@
 																	"font": "Arial;13;0",
 																	"left": 52,
 																	"top": 350,
-																	"width": 320.861328125,
+																	"width": 293.5283203125,
 																	"height": 13,
 																	"text": "[Usuario non existe, suspendido ou contrasinal inválido]"
 																}
@@ -61055,7 +61059,7 @@
 																	"font": "Arial;13;0",
 																	"left": 52,
 																	"top": 440,
-																	"width": 102.5908203125,
+																	"width": 95.646484375,
 																	"height": 13,
 																	"text": "[Usuario correcto]"
 																}
@@ -61796,9 +61800,9 @@
 														"$ref": "AAAAAAF4JgoEDVoewik="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 13,
-													"width": 48.67724609375,
+													"width": 45.052734375,
 													"height": 13,
 													"text": "Rexistro"
 												},
@@ -61811,7 +61815,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -62528,7 +62532,7 @@
 													},
 													"visible": false,
 													"font": "Arial;13;0",
-													"left": 56.72998046875,
+													"left": 55.99365234375,
 													"top": 317,
 													"width": 1,
 													"height": 13
@@ -62542,7 +62546,7 @@
 													"font": "Arial;13;1",
 													"left": 37,
 													"top": 317,
-													"width": 14.72998046875,
+													"width": 13.99365234375,
 													"height": 13,
 													"text": "alt"
 												},
@@ -62575,7 +62579,7 @@
 																	"font": "Arial;13;0",
 																	"left": 52,
 																	"top": 350,
-																	"width": 347.57861328125,
+																	"width": 313.345703125,
 																	"height": 13,
 																	"text": "[Usuario xa existe, contrasinal inseguro, datos incoherentes]"
 																}
@@ -62608,7 +62612,7 @@
 																	"font": "Arial;13;0",
 																	"left": 52,
 																	"top": 440,
-																	"width": 102.5908203125,
+																	"width": 95.646484375,
 																	"height": 13,
 																	"text": "[Usuario correcto]"
 																}
