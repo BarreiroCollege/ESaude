@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Inicio | ESaude</title>
+    <title>Citas | ESaude</title>
 </head>
 
 <style>
@@ -115,6 +115,10 @@
     .border-bottom {
         border-bottom: 1px solid #e5e5e5;
     }
+
+    .star-checked {
+        color: orange;
+    }
 </style>
 
 <body>
@@ -123,7 +127,7 @@
         <!-- <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"> -->
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
-                <a class="nav-link" href="#">Pechar sesión</a>
+                <a class="nav-link" href="acceso.html">Pechar sesión</a>
             </li>
         </ul>
     </nav>
@@ -134,15 +138,15 @@
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
+                            <a class="nav-link" href="doente.html">
                                 <span data-feather="home"></span>
                                 Inicio
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="perfil.html">
+                            <a class="nav-link" href="doente_perfil.html">
                                 <span data-feather="user"></span>
-                                Mis datos
+                                Os meus datos
                             </a>
                         </li>
                     </ul>
@@ -150,25 +154,25 @@
                     <h6
                         class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
                         <span>Diagnósticos</span>
-                        <a class="d-flex align-items-center text-muted" href="#">
+                        <a class="d-flex align-items-center text-muted" href="doente_diagnostico.html">
                             <span data-feather="plus-circle"></span>
                         </a>
                     </h6>
                     <ul class="nav flex-column mb-2">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="doente_historial.html">
                                 <span data-feather="file-text"></span>
                                 Historial
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="doente_citas.html">
                                 <span data-feather="clock"></span>
                                 Citas
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link active" href="#">
                                 <span data-feather="database"></span>
                                 Medicamentos
                             </a>
@@ -180,10 +184,66 @@
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
                 <div
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Inicio</h1>
+                    <h1 class="h2">Historial de medicamentos</h1>
                 </div>
 
-                <!-- AQUI VA EL CONTENIDO -->
+                <div class="row">
+                    <div class="col">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <strong>19/06/2021 12:45 - Omeprazol</strong> (<a href="#">Auto-Diagnóstico #37</a>)
+                            </li>
+                            <li class="list-group-item">
+                                <strong>20/04/2021 03:17 - Paracetamol</strong> (<a href="#">Auto-Diagnóstico #31</a>)
+                                <span style="float: right;">
+                                    <span data-feather="star" class="star-checked"></span>
+                                    <span data-feather="star" class="star-checked"></span>
+                                    <span data-feather="star"></span>
+                                    <span data-feather="star"></span>
+                                    <span data-feather="star"></span>
+                                </span>
+                            </li>
+                            <li class="list-group-item">
+                                <strong>05/02/2021 23:19 - Ibuprofeno</strong> (<a href="#">Auto-Diagnóstico #28</a>)
+                                <span style="float: right;">
+                                    <span data-feather="star" class="star-checked"></span>
+                                    <span data-feather="star" class="star-checked"></span>
+                                    <span data-feather="star" class="star-checked"></span>
+                                    <span data-feather="star" class="star-checked"></span>
+                                    <span data-feather="star"></span>
+                                </span>
+                            </li>
+                            <li class="list-group-item">
+                                <strong>11/11/2020 16:48 - Nolotil</strong> (<a href="#">Auto-Diagnóstico #22</a>)
+                                <span style="float: right;">
+                                    <span data-feather="star" class="star-checked"></span>
+                                    <span data-feather="star"></span>
+                                    <span data-feather="star"></span>
+                                    <span data-feather="star"></span>
+                                    <span data-feather="star"></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Seguinte</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </main>
         </div>
     </div>
