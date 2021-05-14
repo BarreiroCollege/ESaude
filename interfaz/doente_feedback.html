@@ -11,7 +11,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="datepicker.css"/>
 
-    <title>Perfil | ESaude</title>
+    <title>Inicio | ESaude</title>
 </head>
 
 <style>
@@ -116,22 +116,6 @@
     .border-bottom {
         border-bottom: 1px solid #e5e5e5;
     }
-
-    #fotoPerfil{
-        width: 130px;
-    padding: 0 30px 0 400px;
-    text-align: center;
-    }
-
-    .btn-float {
-        border-radius: 100%;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-        position: fixed;
-        bottom: 15px;
-        right: 15px;
-        width: 60px;
-        height: 60px;
-    }
 </style>
 
 <body style="min-height: 100%;">
@@ -157,15 +141,14 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
+                            <a class="nav-link" href="perfil.html">
                                 <span data-feather="user"></span>
                                 Meus datos
                             </a>
                         </li>
                     </ul>
 
-                    <h6
-                        class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
                         <span>Diagnósticos</span>
                         <a class="d-flex align-items-center text-muted" href="doente_diagnostico.html">
                             <span data-feather="plus-circle"></span>
@@ -197,73 +180,36 @@
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
                 <div
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Os meus datos</h1>
-                </div>
-                <div id = "fotoPerfil">
-                    <img class="mb-4" src="perfil.png" alt="" width="120"
-                        height="120">
+                    <h1 class="h2">Enviar mensaxe</h1>
                 </div>
 
-                <div class = "row">
-                    <div class = "col">
+                <div class="row">
+                    <div class="col">
                         <div class="form-group">
-                            <label for="txtUsuario">Nome de usuario</label>
-                            <input class="form-control" id="txtUsuario" placeholder="Identificador" value="CarVar2021">
+                            <label for="inputState">Motivo</label>
+                            <select id="inputState" class="form-control">
+                                <option selected disabled>Selecciona un...</option>
+                                <option>Duda</option>
+                                <option>Queixa</option>
+                                <option>Suxerencia</option>
+                            </select>
                         </div>
-                            
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="txtNome">Nome</label>
-                                    <input class="form-control" id="txtNome" placeholder="Nome" value="Carlos">
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <label for="txtApelidos">Apelidos</label>
-                                    <input class="form-control" id="txtApelidos" placeholder="Apelidos" value="Varela Fernández">
-                                </div>
-                            </div>
-                        </div>
-                            
                         <div class="form-group">
-                            <label for="txtEmail">Correo electrónico</label>
-                            <input type="email" class="form-control" id="txtEmail" placeholder="Email" value="carlosvafe@gmail.com">
+                            <label for="inputAddress">Asunto</label>
+                            <input type="text" class="form-control">
                         </div>
-                    </div>
-
-                    <div class = "col-md-6">
                         <div class="form-group">
-                            <label for="txtNacemento">Correo electrónico</label>
-                            <div class="input-group date">
-                                <input id="txtNacemento" class="form-control">
-                                <div class="input-group-append">
-                                    <span class="input-group-text"><span data-feather="calendar"></span></span>
-                                </div>
-                            </div>
-                        </div>
-                            
-                        <div class="form-group">
-                            <label for="txtXenero">Xénero</label>
-                            <input class="form-control" id="txtXenero" placeholder="Xenero" value="Home">
-                        </div>
-                            
-                        <div class="form-group">
-                            <label for="txtAlerxias">Alerxias</label>
-                            <input class="form-control" id="txtAlerxias" placeholder="Alerxias" value="gluten, polen, fresas">
+                            <label for="inputAddress2">Mensaxe</label>
+                            <textarea class="form-control" rows="4"></textarea>
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col">
-                        <button class="btn btn-primary btn-lg btn-block" type="submit" id="btnEditar" onclick="onBtnEditar(event)">Editar</button>
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">Enviar</button>
                     </div>
                 </div>
-    
-                <a type="button" class="btn btn-primary btn-float" href="doente_feedback.html">
-                    <span data-feather="help-circle" style="width: 32px; height: 32px; padding-top: 8px;"></span>
-                </a>
             </main>
         </div>
     </div>
@@ -279,36 +225,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script src="datepicker.js"></script>
-    <script src="datepicker.gl.js"></script>
-
-    <script type="text/Javascript">
-    $('.input-group.date').datepicker({
-        format: "dd/mm/yyyy",
-        weekStart: 1,
-        language: "gl",
-        todayHighlight: true
-    });
-    $('.input-group.date').datepicker('setDate', new Date(2001, 6, 30));
-    </script>
 
     <!-- Icons -->
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
     <script>
         feather.replace();
-        const txts = ["txtUsuario", "txtNome", "txtApelidos", "txtEmail", "txtNacemento", "txtXenero", "txtAlerxias"];
-        txts.forEach(e => {
-            document.getElementById(e).disabled = true;
-        });
-
-        function onBtnEditar(e) {
-            e.preventDefault();
-            let btn = document.getElementById("btnEditar");
-            txts.forEach(e => {
-                if (e !== "txtUsuario") document.getElementById(e).disabled = btn.innerText === "Editar" ? false : true;
-            });
-            btn.innerText = btn.innerText === "Editar" ? "Guardar" : "Editar";
-        };
     </script>
 </body>
 
