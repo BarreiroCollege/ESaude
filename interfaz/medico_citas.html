@@ -9,9 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="datepicker.css"/>
 
-    <title>Inicio | ESaude</title>
+    <title>Citas | ESaude</title>
 </head>
 
 <style>
@@ -118,7 +117,7 @@
     }
 </style>
 
-<body style="min-height: 100%;">
+<body>
     <nav class="navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0">
         <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="inicio.html">ESaude</a>
         <!-- <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"> -->
@@ -135,42 +134,34 @@
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="doente.html">
+                            <a class="nav-link" href="medico.html">
                                 <span data-feather="home"></span>
                                 Inicio
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="doente_perfil.html">
+                            <a class="nav-link" href="medico_perfil.html">
                                 <span data-feather="user"></span>
-                                Meus datos
+                                Os meus datos
                             </a>
                         </li>
                     </ul>
 
-                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                        <span>Diagnósticos</span>
-                        <a class="d-flex align-items-center text-muted" href="doente_diagnostico.html">
-                            <span data-feather="plus-circle"></span>
-                        </a>
+                    <h6
+                        class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Citas</span>
                     </h6>
                     <ul class="nav flex-column mb-2">
                         <li class="nav-item">
-                            <a class="nav-link" href="doente_historial.html">
-                                <span data-feather="file-text"></span>
-                                Historial
+                            <a class="nav-link" href="medico_pacientes.html">
+                                <span data-feather="users"></span>
+                                Solicitudes
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="doente_citas.html">
+                            <a class="nav-link active" href="#">
                                 <span data-feather="clock"></span>
-                                Citas
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="doente_medicamentos.html">
-                                <span data-feather="database"></span>
-                                Medicamentos
+                                Historial
                             </a>
                         </li>
                     </ul>
@@ -180,34 +171,35 @@
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
                 <div
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Enviar mensaxe</h1>
+                    <h1 class="h2">Historial de citas</h1>
                 </div>
 
                 <div class="row">
                     <div class="col">
-                        <div class="form-group">
-                            <label for="inputState">Motivo</label>
-                            <select id="inputState" class="form-control">
-                                <option selected disabled>Selecciona un...</option>
-                                <option>Duda</option>
-                                <option>Queixa</option>
-                                <option>Suxerencia</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputAddress">Asunto</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="inputAddress2">Mensaxe</label>
-                            <textarea class="form-control" rows="4"></textarea>
-                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item"><span class="badge badge-primary">Pendente</span>&nbsp;<strong>23/05/2021 12:45 (<a href="#">Florentino Fernández</a>)</strong> Resfriado (<small>sintomas...</small>)</li>
+                            <li class="list-group-item"><strong>12/04/2021 03:17 (<a href="#">Sandro Rossell</a>)</strong> ¬ Desconocido (<small>sintomas...</small>)</li>
+                            <li class="list-group-item"><strong>01/02/2021 23:19 (<a href="#">Joan Laporta</a>)</strong> Mononucleosis (<small>sintomas...</small>)</li>
+                            <li class="list-group-item"><strong>22/11/2020 16:48 (<a href="#">Josep Maria Bartomeu</a>)</strong> Indigestión (<small>sintomas...</small>)</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row" style="margin-top: 30px;">
                     <div class="col">
-                        <button class="btn btn-primary btn-lg btn-block" type="submit">Enviar</button>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Seguinte</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </main>
@@ -229,7 +221,7 @@
     <!-- Icons -->
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
     <script>
-        feather.replace();
+        feather.replace()
     </script>
 </body>
 

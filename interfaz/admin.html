@@ -9,7 +9,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="datepicker.css"/>
 
     <title>Inicio | ESaude</title>
 </head>
@@ -118,7 +117,7 @@
     }
 </style>
 
-<body style="min-height: 100%;">
+<body>
     <nav class="navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0">
         <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="inicio.html">ESaude</a>
         <!-- <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"> -->
@@ -135,42 +134,46 @@
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="doente.html">
+                            <a class="nav-link active" href="#">
                                 <span data-feather="home"></span>
                                 Inicio
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="doente_perfil.html">
+                            <a class="nav-link" href="admin_perfil.html">
                                 <span data-feather="user"></span>
-                                Meus datos
+                                Os meus datos
                             </a>
                         </li>
                     </ul>
 
-                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                        <span>Diagnósticos</span>
-                        <a class="d-flex align-items-center text-muted" href="doente_diagnostico.html">
-                            <span data-feather="plus-circle"></span>
-                        </a>
+                    <h6
+                        class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Admin</span>
                     </h6>
                     <ul class="nav flex-column mb-2">
                         <li class="nav-item">
-                            <a class="nav-link" href="doente_historial.html">
-                                <span data-feather="file-text"></span>
-                                Historial
+                            <a class="nav-link" href="admin_usuarios.html">
+                                <span data-feather="users"></span>
+                                Usuarios
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="doente_citas.html">
-                                <span data-feather="clock"></span>
-                                Citas
+                            <a class="nav-link" href="admin_mensaxes.html">
+                                <span data-feather="message-square"></span>
+                                Mensaxes
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="doente_medicamentos.html">
+                            <a class="nav-link" href="admin_farmacos.html">
                                 <span data-feather="database"></span>
-                                Medicamentos
+                                Fármacos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin_sintomas.html">
+                                <span data-feather="crosshair"></span>
+                                Síntomas
                             </a>
                         </li>
                     </ul>
@@ -180,35 +183,11 @@
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
                 <div
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Enviar mensaxe</h1>
+                    <h1 class="h2">Inicio</h1>
                 </div>
 
-                <div class="row">
-                    <div class="col">
-                        <div class="form-group">
-                            <label for="inputState">Motivo</label>
-                            <select id="inputState" class="form-control">
-                                <option selected disabled>Selecciona un...</option>
-                                <option>Duda</option>
-                                <option>Queixa</option>
-                                <option>Suxerencia</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputAddress">Asunto</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="inputAddress2">Mensaxe</label>
-                            <textarea class="form-control" rows="4"></textarea>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col">
-                        <button class="btn btn-primary btn-lg btn-block" type="submit">Enviar</button>
-                    </div>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    Hai <strong>oito contas</strong> pendentes de revisión.
                 </div>
             </main>
         </div>
@@ -229,7 +208,7 @@
     <!-- Icons -->
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
     <script>
-        feather.replace();
+        feather.replace()
     </script>
 </body>
 

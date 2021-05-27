@@ -11,7 +11,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="datepicker.css"/>
 
-    <title>Inicio | ESaude</title>
+    <title>Perfil | ESaude</title>
 </head>
 
 <style>
@@ -116,6 +116,22 @@
     .border-bottom {
         border-bottom: 1px solid #e5e5e5;
     }
+
+    #fotoPerfil{
+        width: 130px;
+    padding: 0 30px 0 400px;
+    text-align: center;
+    }
+
+    .btn-float {
+        border-radius: 100%;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        width: 60px;
+        height: 60px;
+    }
 </style>
 
 <body style="min-height: 100%;">
@@ -135,42 +151,46 @@
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="doente.html">
+                            <a class="nav-link" href="admin.html">
                                 <span data-feather="home"></span>
                                 Inicio
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="doente_perfil.html">
+                            <a class="nav-link active" href="#">
                                 <span data-feather="user"></span>
-                                Meus datos
+                                Os meus datos
                             </a>
                         </li>
                     </ul>
 
-                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                        <span>Diagnósticos</span>
-                        <a class="d-flex align-items-center text-muted" href="doente_diagnostico.html">
-                            <span data-feather="plus-circle"></span>
-                        </a>
+                    <h6
+                        class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Admin</span>
                     </h6>
                     <ul class="nav flex-column mb-2">
                         <li class="nav-item">
-                            <a class="nav-link" href="doente_historial.html">
-                                <span data-feather="file-text"></span>
-                                Historial
+                            <a class="nav-link" href="admin_usuarios.html">
+                                <span data-feather="users"></span>
+                                Usuarios
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="doente_citas.html">
-                                <span data-feather="clock"></span>
-                                Citas
+                            <a class="nav-link" href="admin_mensaxes.html">
+                                <span data-feather="message-square"></span>
+                                Mensaxes
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="doente_medicamentos.html">
+                            <a class="nav-link" href="admin_farmacos.html">
                                 <span data-feather="database"></span>
-                                Medicamentos
+                                Fármacos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin_sintomas.html">
+                                <span data-feather="crosshair"></span>
+                                Síntomas
                             </a>
                         </li>
                     </ul>
@@ -180,34 +200,62 @@
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
                 <div
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Enviar mensaxe</h1>
+                    <h1 class="h2">Os meus datos</h1>
+                </div>
+                <div id = "fotoPerfil">
+                    <img class="mb-4" src="perfil.png" alt="" width="120"
+                        height="120">
                 </div>
 
-                <div class="row">
-                    <div class="col">
+                <div class = "row">
+                    <div class = "col">
                         <div class="form-group">
-                            <label for="inputState">Motivo</label>
-                            <select id="inputState" class="form-control">
-                                <option selected disabled>Selecciona un...</option>
-                                <option>Duda</option>
-                                <option>Queixa</option>
-                                <option>Suxerencia</option>
-                            </select>
+                            <label for="txtUsuario">Nome de usuario</label>
+                            <input class="form-control" id="txtUsuario" placeholder="Identificador" value="DrMundo">
                         </div>
-                        <div class="form-group">
-                            <label for="inputAddress">Asunto</label>
-                            <input type="text" class="form-control">
+                            
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="txtNome">Nome</label>
+                                    <input class="form-control" id="txtNome" placeholder="Nome" value="Edmundo">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for="txtApelidos">Apelidos</label>
+                                    <input class="form-control" id="txtApelidos" placeholder="Apelidos" value="Lapón Sánchez">
+                                </div>
+                            </div>
                         </div>
+                            
                         <div class="form-group">
-                            <label for="inputAddress2">Mensaxe</label>
-                            <textarea class="form-control" rows="4"></textarea>
+                            <label for="txtEmail">Correo electrónico</label>
+                            <input type="email" class="form-control" id="txtEmail" placeholder="Email" value="drmundo@gmail.com">
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6">
+                        <div class="form-group">
+                            <label for="txtNacemento">Data de nacemento</label>
+                            <div class="input-group date">
+                                <input id="txtNacemento" class="form-control">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><span data-feather="calendar"></span></span>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="form-group">
+                            <label for="txtXenero">Xénero</label>
+                            <input class="form-control" id="txtXenero" placeholder="Xénero" value="Home">
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col">
-                        <button class="btn btn-primary btn-lg btn-block" type="submit">Enviar</button>
+                        <button class="btn btn-primary btn-lg btn-block" type="submit" id="btnEditar" onclick="onBtnEditar(event)">Editar</button>
                     </div>
                 </div>
             </main>
@@ -225,11 +273,36 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="datepicker.js"></script>
+    <script src="datepicker.gl.js"></script>
+
+    <script type="text/Javascript">
+    $('.input-group.date').datepicker({
+        format: "dd/mm/yyyy",
+        weekStart: 1,
+        language: "gl",
+        todayHighlight: true
+    });
+    $('.input-group.date').datepicker('setDate', new Date(2009, 9, 2));
+    </script>
 
     <!-- Icons -->
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
     <script>
         feather.replace();
+        const txts = ["txtUsuario", "txtNome", "txtApelidos", "txtEmail", "txtNacemento", "txtXenero"];
+        txts.forEach(e => {
+            document.getElementById(e).disabled = true;
+        });
+
+        function onBtnEditar(e) {
+            e.preventDefault();
+            let btn = document.getElementById("btnEditar");
+            txts.forEach(e => {
+                if (e !== "txtUsuario") document.getElementById(e).disabled = btn.innerText === "Editar" ? false : true;
+            });
+            btn.innerText = btn.innerText === "Editar" ? "Guardar" : "Editar";
+        };
     </script>
 </body>
 

@@ -151,7 +151,7 @@
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="doente.html">
+                            <a class="nav-link" href="medico.html">
                                 <span data-feather="home"></span>
                                 Inicio
                             </a>
@@ -166,28 +166,19 @@
 
                     <h6
                         class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                        <span>Diagnósticos</span>
-                        <a class="d-flex align-items-center text-muted" href="doente_diagnostico.html">
-                            <span data-feather="plus-circle"></span>
-                        </a>
+                        <span>Citas</span>
                     </h6>
                     <ul class="nav flex-column mb-2">
                         <li class="nav-item">
-                            <a class="nav-link" href="doente_historial.html">
-                                <span data-feather="file-text"></span>
-                                Historial
+                            <a class="nav-link" href="medico_pacientes.html">
+                                <span data-feather="users"></span>
+                                Solicitudes
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="doente_citas.html">
+                            <a class="nav-link" href="medico_citas.html">
                                 <span data-feather="clock"></span>
-                                Citas
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="doente_medicamentos.html">
-                                <span data-feather="database"></span>
-                                Medicamentos
+                                Historial
                             </a>
                         </li>
                     </ul>
@@ -208,27 +199,27 @@
                     <div class = "col">
                         <div class="form-group">
                             <label for="txtUsuario">Nome de usuario</label>
-                            <input class="form-control" id="txtUsuario" placeholder="Identificador" value="CarVar2021">
+                            <input class="form-control" id="txtUsuario" placeholder="Identificador" value="MarLop1983">
                         </div>
                             
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label for="txtNome">Nome</label>
-                                    <input class="form-control" id="txtNome" placeholder="Nome" value="Carlos">
+                                    <input class="form-control" id="txtNome" placeholder="Nome" value="Maria">
                                 </div>
                             </div>
                             <div class="col-md-8">
                                 <div class="form-group">
                                     <label for="txtApelidos">Apelidos</label>
-                                    <input class="form-control" id="txtApelidos" placeholder="Apelidos" value="Varela Fernández">
+                                    <input class="form-control" id="txtApelidos" placeholder="Apelidos" value="López Rodríguez">
                                 </div>
                             </div>
                         </div>
                             
                         <div class="form-group">
                             <label for="txtEmail">Correo electrónico</label>
-                            <input type="email" class="form-control" id="txtEmail" placeholder="Email" value="carlosvafe@gmail.com">
+                            <input type="email" class="form-control" id="txtEmail" placeholder="Email" value="marialoro@gmail.com">
                         </div>
                     </div>
 
@@ -245,12 +236,12 @@
                             
                         <div class="form-group">
                             <label for="txtXenero">Xénero</label>
-                            <input class="form-control" id="txtXenero" placeholder="Xenero" value="Home">
+                            <input class="form-control" id="txtXenero" placeholder="Xénero" value="Muller">
                         </div>
                             
                         <div class="form-group">
-                            <label for="txtAlerxias">Alerxias</label>
-                            <input class="form-control" id="txtAlerxias" placeholder="Alerxias" value="gluten, polen, fresas">
+                            <label for="txtAlerxias">Especialización</label>
+                            <input class="form-control" id="txtAlerxias" placeholder="Especialización" value="Pneumología">
                         </div>
                     </div>
                 </div>
@@ -264,7 +255,7 @@
                     </div>
                 </div>
     
-                <a type="button" class="btn btn-primary btn-float" href="doente_feedback.html">
+                <a type="button" class="btn btn-primary btn-float" href="medico_feedback.html">
                     <span data-feather="help-circle" style="width: 32px; height: 32px; padding-top: 8px;"></span>
                 </a>
             </main>
@@ -313,7 +304,7 @@
         language: "gl",
         todayHighlight: true
     });
-    $('.input-group.date').datepicker('setDate', new Date(2001, 6, 30));
+    $('.input-group.date').datepicker('setDate', new Date(1983, 6, 13));
     </script>
 
     <!-- Icons -->

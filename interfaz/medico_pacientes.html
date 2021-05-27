@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Citas | ESaude</title>
+    <title>Solicitudes | ESaude</title>
 </head>
 
 <style>
@@ -134,13 +134,13 @@
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="doente.html">
+                            <a class="nav-link" href="medico.html">
                                 <span data-feather="home"></span>
                                 Inicio
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="doente_perfil.html">
+                            <a class="nav-link" href="medico_perfil.html">
                                 <span data-feather="user"></span>
                                 Os meus datos
                             </a>
@@ -149,28 +149,19 @@
 
                     <h6
                         class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                        <span>Diagnósticos</span>
-                        <a class="d-flex align-items-center text-muted" href="doente_diagnostico.html">
-                            <span data-feather="plus-circle"></span>
-                        </a>
+                        <span>Citas</span>
                     </h6>
                     <ul class="nav flex-column mb-2">
                         <li class="nav-item">
-                            <a class="nav-link" href="doente_historial.html">
-                                <span data-feather="file-text"></span>
-                                Historial
-                            </a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link active" href="#">
-                                <span data-feather="clock"></span>
-                                Citas
+                                <span data-feather="users"></span>
+                                Solicitudes
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="doente_medicamentos.html">
-                                <span data-feather="database"></span>
-                                Medicamentos
+                            <a class="nav-link" href="medico_citas.html">
+                                <span data-feather="clock"></span>
+                                Historial
                             </a>
                         </li>
                     </ul>
@@ -180,19 +171,28 @@
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
                 <div
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Historial de citas</h1>
+                    <h1 class="h2">Solicitudes de pacientes</h1>
                 </div>
 
                 <div class="row">
                     <div class="col">
                         <ul class="list-group">
                             <li class="list-group-item"><div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                                <button type="button" class="btn btn-secondary"><span data-feather="check"></span></button>
-                                <button type="button" class="btn btn-secondary"><span data-feather="x"></span></button>
-                              </div>&nbsp;&nbsp;&nbsp;<strong>23/06/2021 12:45 (<a href="#">Florentino Fernández</a>)</strong> Resfriado (<small>sintomas...</small>)</li>
-                            <li class="list-group-item"><strong>12/04/2021 03:17 (<a href="#">Sandro Rossell</a>)</strong> ¬ Desconocido (<small>sintomas...</small>)</li>
-                            <li class="list-group-item"><strong>01/02/2021 23:19 (<a href="#">Joan Laporta</a>)</strong> Mononucleosis (<small>sintomas...</small>)</li>
-                            <li class="list-group-item"><strong>22/11/2020 16:48 (<a href="#">Josep Maria Bartomeu</a>)</strong> Indigestión (<small>sintomas...</small>)</li>
+                                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#mdlCita">Propoñer cita</button>
+                                <button type="button" class="btn btn-secondary"><span data-feather="trash-2"></span></button>
+                              </div>&nbsp;&nbsp;&nbsp;<strong><a href="#">Florentino Fernández</a></strong> Resfriado (<small>sintomas...</small>)</li>
+                            <li class="list-group-item"><div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#mdlCita">Propoñer cita</button>
+                                <button type="button" class="btn btn-secondary"><span data-feather="trash-2"></span></button>
+                              </div>&nbsp;&nbsp;&nbsp;<strong><a href="#">Sandro Rossell</a></strong> ¬ Desconocido (<small>sintomas...</small>)</li>
+                            <li class="list-group-item"><div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#mdlCita">Propoñer cita</button>
+                                <button type="button" class="btn btn-secondary"><span data-feather="trash-2"></span></button>
+                              </div>&nbsp;&nbsp;&nbsp;<strong><a href="#">Joan Laporta</a></strong> Mononucleosis (<small>sintomas...</small>)</li>
+                            <li class="list-group-item"><div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#mdlCita">Propoñer cita</button>
+                                <button type="button" class="btn btn-secondary"><span data-feather="trash-2"></span></button>
+                              </div>&nbsp;&nbsp;&nbsp;<strong><a href="#">Josep Maria Bartomeu</a></strong> Indigestión (<small>sintomas...</small>)</li>
                         </ul>
                     </div>
                 </div>
@@ -218,6 +218,35 @@
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="mdlCita" tabindex="-1" aria-labelledby="mdlCitaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mdlCitaLabel">Propoñer cita</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="txtNacemento">Data da cita</label>
+                            <div class="input-group date">
+                                <input id="txtNacemento" class="form-control">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><span data-feather="calendar"></span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Propoñer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -229,11 +258,20 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="datepicker.js"></script>
+    <script src="datepicker.gl.js"></script>
 
     <!-- Icons -->
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
     <script>
-        feather.replace()
+        $('.input-group.date').datepicker({
+            format: "dd/mm/yyyy",
+            weekStart: 1,
+            language: "gl",
+            todayHighlight: true
+        });
+
+        feather.replace();
     </script>
 </body>
 

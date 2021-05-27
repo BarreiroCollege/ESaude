@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Farmacos | ESaude</title>
+</head>
+
+<style>
+    body {
+        font-size: .875rem;
+    }
+
+    .feather {
+        width: 16px;
+        height: 16px;
+        vertical-align: text-bottom;
+    }
+
+    /*
+ * Sidebar
+ */
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        /* Behind the navbar */
+        padding: 0;
+        box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    }
+
+    .sidebar-sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 48px;
+        /* Height of navbar */
+        height: calc(100vh - 48px);
+        padding-top: .5rem;
+        overflow-x: hidden;
+        overflow-y: auto;
+        /* Scrollable contents if viewport is shorter than content. */
+    }
+
+    .sidebar .nav-link {
+        font-weight: 500;
+        color: #333;
+    }
+
+    .sidebar .nav-link .feather {
+        margin-right: 4px;
+        color: #999;
+    }
+
+    .sidebar .nav-link.active {
+        color: #007bff;
+    }
+
+    .sidebar .nav-link:hover .feather,
+    .sidebar .nav-link.active .feather {
+        color: inherit;
+    }
+
+    .sidebar-heading {
+        font-size: .75rem;
+        text-transform: uppercase;
+    }
+
+    /*
+ * Navbar
+ */
+
+    .navbar-brand {
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        font-size: 1rem;
+        background-color: rgba(0, 0, 0, .25);
+        box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+    }
+
+    .navbar .form-control {
+        padding: .75rem 1rem;
+        border-width: 0;
+        border-radius: 0;
+    }
+
+    .form-control-dark {
+        color: #fff;
+        background-color: rgba(255, 255, 255, .1);
+        border-color: rgba(255, 255, 255, .1);
+    }
+
+    .form-control-dark:focus {
+        border-color: transparent;
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+    }
+
+    /*
+    * Utilities
+    */
+
+    .border-top {
+        border-top: 1px solid #e5e5e5;
+    }
+
+    .border-bottom {
+        border-bottom: 1px solid #e5e5e5;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="inicio.html">ESaude</a>
+        <!-- <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"> -->
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="acceso.html">Pechar sesión</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin.html">
+                                <span data-feather="home"></span>
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin_perfil.html">
+                                <span data-feather="user"></span>
+                                Os meus datos
+                            </a>
+                        </li>
+                    </ul>
+
+                    <h6
+                        class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Admin</span>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin_usuarios.html">
+                                <span data-feather="users"></span>
+                                Usuarios
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin_mensaxes.html">
+                                <span data-feather="message-square"></span>
+                                Mensaxes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin_farmacos.html">
+                                <span data-feather="database"></span>
+                                Fármacos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <span data-feather="crosshair"></span>
+                                Síntomas
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Síntomas das doenzas</h1>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                              <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Encefalite
+                                  </button>
+                                </h2>
+                              </div>
+                          
+                              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item"><div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                            <button type="button" class="btn btn-secondary"><span data-feather="x"></span></button>
+                                          </div>&nbsp;&nbsp;&nbsp;Dor de cabeza</li>
+                                        <li class="list-group-item"><div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                            <button type="button" class="btn btn-secondary"><span data-feather="x"></span></button>
+                                          </div>&nbsp;&nbsp;&nbsp;Mareos</li>
+                                        <li class="list-group-item"><div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                            <button type="button" class="btn btn-secondary"><span data-feather="x"></span></button>
+                                          </div>&nbsp;&nbsp;&nbsp;Febre</li>
+                                      </ul>
+                                      <div class="input-group mt-3">
+                                        <input type="text" class="form-control" placeholder="Síntoma" aria-label="Síntoma" aria-describedby="button-addon2">
+                                        <div class="input-group-append">
+                                          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Engadir</button>
+                                        </div>
+                                      </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Mononucleosis
+                                  </button>
+                                </h2>
+                              </div>
+                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                  Some placeholder content for the second accordion panel. This panel is hidden by default.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Resfriado
+                                  </button>
+                                </h2>
+                              </div>
+                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                  And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Seguinte</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="mdlCita" tabindex="-1" aria-labelledby="mdlCitaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mdlCitaLabel"><span data-feather="check"></span></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="txtNacemento">Data da cita</label>
+                            <div class="input-group date">
+                                <input id="txtNacemento" class="form-control">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><span data-feather="calendar"></span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Propoñer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="datepicker.js"></script>
+    <script src="datepicker.gl.js"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+        $('.input-group.date').datepicker({
+            format: "dd/mm/yyyy",
+            weekStart: 1,
+            language: "gl",
+            todayHighlight: true
+        });
+
+        feather.replace();
+    </script>
+</body>
+
+</html>
