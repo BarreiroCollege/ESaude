@@ -144,29 +144,36 @@ En caso contrario, la cita en recetas será nula ya que será un medicamento rec
           
           <tr>
             <td>private</td>
-            <td><a href="590a443282e559ea459be2953be3b6f5.html">doente</a></td>
-            <td><span class='label label-info'>none</span></td>
+            <td><a href="590a443282e559ea459be2953be3b6f5.html">data</a></td>
+            <td>Date</td>
             <td></td>
           </tr>
           
           <tr>
             <td>private</td>
-            <td><a href="f7e8e9179bf5766d5077eb99271a129e.html">recetas</a></td>
-            <td><span class='label label-info'>none</span></td>
+            <td><a href="a6071e2743bba61d960e86b8f354b985.html">medicamentoSolicitado</a></td>
+            <td>Bool</td>
             <td></td>
           </tr>
           
           <tr>
             <td>private</td>
-            <td><a href="a6071e2743bba61d960e86b8f354b985.html">doenzas</a></td>
-            <td><span class='label label-info'>none</span></td>
+            <td><a href="6368b983755e92c172cd8dbb37df54dc.html">medicoSolicitado</a></td>
+            <td>Bool</td>
             <td></td>
           </tr>
           
           <tr>
             <td>private</td>
-            <td><a href="6368b983755e92c172cd8dbb37df54dc.html">sintomas</a></td>
-            <td><span class='label label-info'>none</span></td>
+            <td><a href="32aef253150ea327a473769d3abceaf5.html">valoracionDiagnostico</a></td>
+            <td>Int</td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td><a href="914d15bd7f42e2fd4cf9a99b9541ef00.html">valoracionMedicamento</a></td>
+            <td>Int</td>
             <td></td>
           </tr>
           
@@ -383,11 +390,17 @@ En caso contrario, la cita en recetas será nula ya que será un medicamento rec
         
         <li><a href='0d5467f744dc9e459d5f2221b3e66574.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Doente—Diagnostico)</a></li>
         
-        <li><a href='eb7ad6f44f4f675cd407b352c9433591.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Diagnostico—Doenza)</a></li>
+        <li><a href='eb7ad6f44f4f675cd407b352c9433591.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>0..1 (Diagnostico—Doenza)</a></li>
         
-        <li><a href='35ac05410253b9ba820822a7f934d551.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Diagnostico—Sintoma)</a></li>
+        <li><a href='35ac05410253b9ba820822a7f934d551.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>1..n (Diagnostico—Sintoma)</a></li>
         
-        <li><a href='41a8c0d75abeee7c0b499e1824ec7b59.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Receta—Diagnostico)</a></li>
+        <li><a href='77fa0b07aeca92d751dbcfb204b60411.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Diagnostico—DiagnosticoDAO)</a></li>
+        
+        <li><a href='84650063eea27ae194e429db0aebc194.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Diagnostico—Medicamento)</a></li>
+        
+        <li><a href='8064b9e8e9034ac145f1455a8eced14e.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Diagnostico—Cita)</a></li>
+        
+        <li><a href='41a8c0d75abeee7c0b499e1824ec7b59.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>1 (Receta—Diagnostico)</a></li>
         
     </ul>
 </section>
@@ -402,9 +415,15 @@ En caso contrario, la cita en recetas será nula ya que será un medicamento rec
     <h3>Owned Elements</h3>
     <ul class="nav nav-list">
         
-        <li><a href='eb7ad6f44f4f675cd407b352c9433591.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Diagnostico—Doenza)</a></li>
+        <li><a href='eb7ad6f44f4f675cd407b352c9433591.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>0..1 (Diagnostico—Doenza)</a></li>
         
-        <li><a href='35ac05410253b9ba820822a7f934d551.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Diagnostico—Sintoma)</a></li>
+        <li><a href='35ac05410253b9ba820822a7f934d551.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>1..n (Diagnostico—Sintoma)</a></li>
+        
+        <li><a href='77fa0b07aeca92d751dbcfb204b60411.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Diagnostico—DiagnosticoDAO)</a></li>
+        
+        <li><a href='84650063eea27ae194e429db0aebc194.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Diagnostico—Medicamento)</a></li>
+        
+        <li><a href='8064b9e8e9034ac145f1455a8eced14e.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Diagnostico—Cita)</a></li>
         
     </ul>
 </section>
