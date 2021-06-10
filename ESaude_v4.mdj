@@ -63834,7 +63834,7 @@
 											"top": 1902,
 											"width": 270.94970703125,
 											"height": 13,
-											"text": "-confirmarContrasinalSeguro(contrasinal): Bool",
+											"text": "-confirmarDatosCoherentes(datos...): Bool",
 											"horizontalAlignment": 0
 										}
 									],
@@ -68755,7 +68755,7 @@
 											"top": 443,
 											"width": 253.96337890625,
 											"height": 13,
-											"text": "-normalizarSintoma(String): Sintoma",
+											"text": "+normalizarSintoma(String): Sintoma",
 											"horizontalAlignment": 0
 										},
 										{
@@ -71650,7 +71650,8 @@
 									"_parent": {
 										"$ref": "AAAAAAF5akNBEhcLGNw="
 									},
-									"name": "Sintomas"
+									"name": "Sintomas",
+									"type": ""
 								},
 								{
 									"_type": "UMLParameter",
@@ -71704,7 +71705,8 @@
 									"_parent": {
 										"$ref": "AAAAAAF5akmVAhjL9Rc="
 									},
-									"name": "Sintomas"
+									"name": "Sintomas",
+									"type": ""
 								},
 								{
 									"_type": "UMLParameter",
@@ -71756,7 +71758,8 @@
 									"_parent": {
 										"$ref": "AAAAAAF5aknCzxjSjAI="
 									},
-									"name": "Sintomas"
+									"name": "Sintomas",
+									"type": ""
 								},
 								{
 									"_type": "UMLParameter",
@@ -72747,7 +72750,8 @@
 									"_parent": {
 										"$ref": "AAAAAAF59UQ/j2B+1D4="
 									},
-									"name": "id"
+									"name": "id",
+									"type": ""
 								},
 								{
 									"_type": "UMLParameter",
@@ -72755,7 +72759,8 @@
 									"_parent": {
 										"$ref": "AAAAAAF59UQ/j2B+1D4="
 									},
-									"name": "contrasinal"
+									"name": "contrasinal",
+									"type": ""
 								},
 								{
 									"_type": "UMLParameter",
@@ -72898,7 +72903,7 @@
 							"_parent": {
 								"$ref": "AAAAAAF59UVlqGCw3n0="
 							},
-							"name": "confirmarContrasinalSeguro",
+							"name": "confirmarDatosCoherentes",
 							"visibility": "private",
 							"parameters": [
 								{
@@ -72907,8 +72912,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF59UX8kmDwTwc="
 									},
-									"name": "contrasinal",
-									"type": ""
+									"name": "datos..."
 								},
 								{
 									"_type": "UMLParameter",
@@ -73681,7 +73685,6 @@
 								"$ref": "AAAAAAF59WQEKmgCIbY="
 							},
 							"name": "normalizarSintoma",
-							"visibility": "private",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -73689,8 +73692,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF59WSz12hGjSM="
 									},
-									"name": "String",
-									"type": ""
+									"name": "String"
 								},
 								{
 									"_type": "UMLParameter",
@@ -74869,7 +74871,7 @@
 																"$ref": "AAAAAAF4JerN7VfnS3w="
 															},
 															"visible": false,
-															"font": "Arial;11.700000000000001;0",
+															"font": "Arial;13;0",
 															"left": -592,
 															"width": 106.20263671875,
 															"height": 13,
@@ -75490,7 +75492,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF4Ja8IOlJeTIY="
 							},
-							"name": "RolePC"
+							"name": "RolePC",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -77275,7 +77278,7 @@
 																"$ref": "AAAAAAF58bmD4HuRn9M="
 															},
 															"visible": false,
-															"font": "Arial;11.700000000000001;0",
+															"font": "Arial;13;0",
 															"left": -16,
 															"width": 106.20263671875,
 															"height": 13,
@@ -79658,7 +79661,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF58bkpwnq2zT0="
 							},
-							"name": "Role2"
+							"name": "Role2",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",

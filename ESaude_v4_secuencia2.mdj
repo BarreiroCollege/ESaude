@@ -69873,17 +69873,17 @@
 														"$ref": "AAAAAAF59ZoLJNqnkvI="
 													},
 													"font": "Arial;13;0",
-													"left": 552,
+													"left": 536,
 													"top": 299,
 													"width": 251.443359375,
 													"height": 13,
-													"alpha": 1.5784287657297071,
-													"distance": 131.00381673829202,
+													"alpha": 1.5794907590505887,
+													"distance": 115.00434774390054,
 													"hostEdge": {
 														"$ref": "AAAAAAF59ZoLJNqoh00="
 													},
 													"edgePosition": 1,
-													"text": "6 : confirmarContrasinalSeguro(contrasinal)"
+													"text": "6 : confirmarDatosCoherentes(datos...)"
 												},
 												{
 													"_type": "EdgeLabelView",
@@ -70837,14 +70837,14 @@
 									"_parent": {
 										"$ref": "AAAAAAF4JgoEDVocdD0="
 									},
-									"name": "confirmarContrasinalSeguro",
+									"name": "confirmarDatosCoherentes",
 									"source": {
 										"$ref": "AAAAAAF59ZSiftpAH38="
 									},
 									"target": {
 										"$ref": "AAAAAAF59ZSiftpAH38="
 									},
-									"arguments": "contrasinal"
+									"arguments": "datos..."
 								},
 								{
 									"_type": "UMLMessage",
@@ -71065,7 +71065,7 @@
 													},
 													"font": "Arial;13;0",
 													"left": 24.72998046875,
-													"top": 101,
+													"top": 13,
 													"width": 118.0634765625,
 													"height": 13,
 													"text": "Realizar diagnostico"
@@ -71078,16 +71078,16 @@
 													},
 													"font": "Arial;13;1",
 													"left": 5,
-													"top": 101,
+													"top": 13,
 													"width": 14.72998046875,
 													"height": 13,
 													"text": "sd"
 												}
 											],
 											"font": "Arial;13;0",
-											"top": 96,
+											"top": 8,
 											"width": 1233,
-											"height": 1337,
+											"height": 1441,
 											"nameLabel": {
 												"$ref": "AAAAAAF58bkpwnq6H1k="
 											},
@@ -71916,9 +71916,9 @@
 													"font": "Arial;13;0",
 													"left": 435.578125,
 													"top": 245,
-													"width": 104.3271484375,
+													"width": 166.46435546875,
 													"height": 13,
-													"text": "while not Predecir"
+													"text": "while not onBtnPredecirClick"
 												},
 												{
 													"_type": "LabelView",
@@ -72375,7 +72375,7 @@
 															"top": 643,
 															"width": 126.3271484375,
 															"height": 13,
-															"text": "Predictor"
+															"text": "Predictor1"
 														},
 														{
 															"_type": "LabelView",
@@ -74780,12 +74780,12 @@
 														"$ref": "AAAAAAF59n03NN495RE="
 													},
 													"font": "Arial;13;0",
-													"left": 561,
-													"top": 1260,
+													"left": 584,
+													"top": 1240,
 													"width": 67.9453125,
 													"height": 13,
-													"alpha": 1.5707963267948966,
-													"distance": 10,
+													"alpha": 3.568219975483857,
+													"distance": 24.166091947189145,
 													"hostEdge": {
 														"$ref": "AAAAAAF59n03NN4+5lM="
 													},
@@ -75529,7 +75529,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF58bkpwnq3yOE="
 									},
-									"name": "Predictor",
+									"name": "Predictor1",
 									"represent": {
 										"$ref": "AAAAAAF58cFW2H0aKw4="
 									},
@@ -75555,7 +75555,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF58bkpwnq3yOE="
 									},
-									"name": "while not Predecir",
+									"name": "while not onBtnPredecirClick",
 									"interactionOperator": "loop",
 									"operands": [
 										{
