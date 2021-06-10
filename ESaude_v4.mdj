@@ -58884,7 +58884,7 @@
 											"top": 248,
 											"width": 248.91064453125,
 											"height": 13,
-											"text": "+realizarPrediccion(Sintomas): Diagnostico",
+											"text": "+realizarPrediccion(Sintomas): Doenzas...",
 											"horizontalAlignment": 0
 										}
 									],
@@ -59079,7 +59079,7 @@
 											"top": 104,
 											"width": 248.91064453125,
 											"height": 13,
-											"text": "+realizarPrediccion(Sintomas): Diagnostico",
+											"text": "+realizarPrediccion(Sintomas): Doenzas...",
 											"horizontalAlignment": 0
 										}
 									],
@@ -59274,7 +59274,7 @@
 											"top": 104,
 											"width": 248.91064453125,
 											"height": 13,
-											"text": "+realizarPrediccion(Sintomas): Diagnostico",
+											"text": "+realizarPrediccion(Sintomas): Doenzas...",
 											"horizontalAlignment": 0
 										}
 									],
@@ -68600,8 +68600,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 192,
-											"top": -96,
+											"left": 224,
+											"top": -160,
 											"height": 13
 										},
 										{
@@ -68611,9 +68611,9 @@
 												"$ref": "AAAAAAF59WQEK2gFbok="
 											},
 											"font": "Arial;13;1",
-											"left": 1973,
-											"top": 399,
-											"width": 250.38330078125,
+											"left": 1989,
+											"top": 367,
+											"width": 253.96337890625,
 											"height": 13,
 											"text": "DiagnosticoServicio"
 										},
@@ -68625,8 +68625,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 192,
-											"top": -96,
+											"left": 224,
+											"top": -160,
 											"width": 80.90087890625,
 											"height": 13,
 											"text": "(from Entities)"
@@ -68639,16 +68639,16 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 192,
-											"top": -96,
+											"left": 224,
+											"top": -160,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 1968,
-									"top": 392,
-									"width": 260.38330078125,
+									"left": 1984,
+									"top": 360,
+									"width": 263.96337890625,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF59WQEK2gGFio="
@@ -68683,9 +68683,9 @@
 												"$ref": "AAAAAAF59WRDIGgsPII="
 											},
 											"font": "Arial;13;0",
-											"left": 1973,
-											"top": 422,
-											"width": 250.38330078125,
+											"left": 1989,
+											"top": 390,
+											"width": 253.96337890625,
 											"height": 13,
 											"text": "-predictor: SistemaPrediccion",
 											"horizontalAlignment": 0
@@ -68700,18 +68700,18 @@
 												"$ref": "AAAAAAF59WRjVGgzSQE="
 											},
 											"font": "Arial;13;0",
-											"left": 1973,
-											"top": 437,
-											"width": 250.38330078125,
+											"left": 1989,
+											"top": 405,
+											"width": 253.96337890625,
 											"height": 13,
 											"text": "-sintomas: Sintoma...",
 											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 1968,
-									"top": 417,
-									"width": 260.38330078125,
+									"left": 1984,
+									"top": 385,
+									"width": 263.96337890625,
 									"height": 38
 								},
 								{
@@ -68734,11 +68734,11 @@
 												"$ref": "AAAAAAF59WSGAGg6Z+c="
 											},
 											"font": "Arial;13;0",
-											"left": 1973,
-											"top": 460,
-											"width": 250.38330078125,
+											"left": 1989,
+											"top": 428,
+											"width": 253.96337890625,
 											"height": 13,
-											"text": "+realizarPrediccion(Sintomas): Doenza",
+											"text": "+realizarPrediccion(): Doenza",
 											"horizontalAlignment": 0
 										},
 										{
@@ -68751,9 +68751,9 @@
 												"$ref": "AAAAAAF59WSz12hGjSM="
 											},
 											"font": "Arial;13;0",
-											"left": 1973,
-											"top": 475,
-											"width": 250.38330078125,
+											"left": 1989,
+											"top": 443,
+											"width": 253.96337890625,
 											"height": 13,
 											"text": "-normalizarSintoma(String): Sintoma",
 											"horizontalAlignment": 0
@@ -68767,20 +68767,72 @@
 											"model": {
 												"$ref": "AAAAAAF59WTQu2hRupY="
 											},
+											"visible": false,
 											"font": "Arial;13;0",
-											"left": 1973,
-											"top": 490,
-											"width": 250.38330078125,
+											"left": 1989,
+											"top": 458,
+											"width": 253.96337890625,
 											"height": 13,
 											"text": "+necesitaPreguntarSintoma(Sintoma): Bool",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAF59l735tZHo3M=",
+											"_parent": {
+												"$ref": "AAAAAAF59WQEK2gLFIA="
+											},
+											"model": {
+												"$ref": "AAAAAAF59l73wNZELb0="
+											},
+											"font": "Arial;13;0",
+											"left": 1989,
+											"top": 458,
+											"width": 253.96337890625,
+											"height": 13,
+											"text": "+seleccionarPredictor()",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAF59nWc5uzYZZk=",
+											"_parent": {
+												"$ref": "AAAAAAF59WQEK2gLFIA="
+											},
+											"model": {
+												"$ref": "AAAAAAF59nWcxezVhi0="
+											},
+											"font": "Arial;13;0",
+											"left": 1989,
+											"top": 473,
+											"width": 253.96337890625,
+											"height": 13,
+											"text": "-tablaNormalizacion(String): Sintoma",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAF59nXHqezfywI=",
+											"_parent": {
+												"$ref": "AAAAAAF59WQEK2gLFIA="
+											},
+											"model": {
+												"$ref": "AAAAAAF59nXHj+zcikM="
+											},
+											"font": "Arial;13;0",
+											"left": 1989,
+											"top": 488,
+											"width": 253.96337890625,
+											"height": 13,
+											"text": "-almacenar(Sintoma)",
 											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 1968,
-									"top": 455,
-									"width": 260.38330078125,
-									"height": 53
+									"left": 1984,
+									"top": 423,
+									"width": 263.96337890625,
+									"height": 83
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -68793,8 +68845,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 96,
-									"top": -48,
+									"left": 112,
+									"top": -80,
 									"width": 10,
 									"height": 10
 								},
@@ -68809,18 +68861,18 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 96,
-									"top": -48,
+									"left": 112,
+									"top": -80,
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 1968,
-							"top": 392,
-							"width": 260.38330078125,
-							"height": 116,
+							"left": 1984,
+							"top": 360,
+							"width": 263.96337890625,
+							"height": 161,
 							"nameCompartment": {
 								"$ref": "AAAAAAF59WQEK2gFbok="
 							},
@@ -68858,8 +68910,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 2095,
-									"top": 320,
+									"left": 2103,
+									"top": 305,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -68879,8 +68931,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 2080,
-									"top": 318,
+									"left": 2088,
+									"top": 305,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -68900,8 +68952,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 2124,
-									"top": 323,
+									"left": 2132,
+									"top": 306,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -68919,7 +68971,7 @@
 								"$ref": "AAAAAAF59WQEK2gECKM="
 							},
 							"lineStyle": 1,
-							"points": "2103:391;2117:266",
+							"points": "2117:359;2119:266",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF59WoH2GiIfGs="
@@ -68952,8 +69004,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 2080,
-									"top": 562,
+									"left": 2087,
+									"top": 568,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -68973,8 +69025,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 2065,
-									"top": 562,
+									"left": 2072,
+									"top": 567,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -68994,8 +69046,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 2109,
-									"top": 563,
+									"left": 2116,
+									"top": 571,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -69013,7 +69065,7 @@
 								"$ref": "AAAAAAF4/b8C2GQyMBE="
 							},
 							"lineStyle": 1,
-							"points": "2094:631;2096:508",
+							"points": "2097:631;2107:521",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF59WoU8miZXxI="
@@ -70635,8 +70687,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 2302,
-									"top": 499,
+									"left": 2312,
+									"top": 497,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -70656,8 +70708,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 2307,
-									"top": 485,
+									"left": 2318,
+									"top": 483,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -70677,8 +70729,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 2291,
-									"top": 528,
+									"left": 2301,
+									"top": 524,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -70696,7 +70748,7 @@
 								"$ref": "AAAAAAF59WQEK2gECKM="
 							},
 							"lineStyle": 1,
-							"points": "2228:496;2367:545",
+							"points": "2248:494;2367:541",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF59jmqjdYJXiI="
@@ -71598,8 +71650,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF5akNBEhcLGNw="
 									},
-									"name": "Sintomas",
-									"type": ""
+									"name": "Sintomas"
 								},
 								{
 									"_type": "UMLParameter",
@@ -71607,9 +71658,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF5akNBEhcLGNw="
 									},
-									"type": {
-										"$ref": "AAAAAAF4AcyEgy/50xA="
-									},
+									"type": "Doenzas...",
 									"direction": "return"
 								}
 							],
@@ -71655,8 +71704,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF5akmVAhjL9Rc="
 									},
-									"name": "Sintomas",
-									"type": ""
+									"name": "Sintomas"
 								},
 								{
 									"_type": "UMLParameter",
@@ -71664,9 +71712,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF5akmVAhjL9Rc="
 									},
-									"type": {
-										"$ref": "AAAAAAF4AcyEgy/50xA="
-									},
+									"type": "Doenzas...",
 									"direction": "return"
 								}
 							]
@@ -71710,8 +71756,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF5aknCzxjSjAI="
 									},
-									"name": "Sintomas",
-									"type": ""
+									"name": "Sintomas"
 								},
 								{
 									"_type": "UMLParameter",
@@ -71719,9 +71764,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF5aknCzxjSjAI="
 									},
-									"type": {
-										"$ref": "AAAAAAF4AcyEgy/50xA="
-									},
+									"type": "Doenzas...",
 									"direction": "return"
 								}
 							]
@@ -73620,16 +73663,7 @@
 							"parameters": [
 								{
 									"_type": "UMLParameter",
-									"_id": "AAAAAAF59WShAmhB2VU=",
-									"_parent": {
-										"$ref": "AAAAAAF59WSGAGg6Z+c="
-									},
-									"name": "Sintomas",
-									"type": ""
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAF59WShAmhCyto=",
+									"_id": "AAAAAAF59nzq8OztQCE=",
 									"_parent": {
 										"$ref": "AAAAAAF59WSGAGg6Z+c="
 									},
@@ -73696,6 +73730,65 @@
 									},
 									"type": "Bool",
 									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAF59l73wNZELb0=",
+							"_parent": {
+								"$ref": "AAAAAAF59WQEKmgCIbY="
+							},
+							"name": "seleccionarPredictor"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAF59nWcxezVhi0=",
+							"_parent": {
+								"$ref": "AAAAAAF59WQEKmgCIbY="
+							},
+							"name": "tablaNormalizacion",
+							"visibility": "private",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAF59nYd9ezmdJw=",
+									"_parent": {
+										"$ref": "AAAAAAF59nWcxezVhi0="
+									},
+									"name": "String",
+									"type": ""
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAF59nYd9ezn52Q=",
+									"_parent": {
+										"$ref": "AAAAAAF59nWcxezVhi0="
+									},
+									"type": {
+										"$ref": "AAAAAAF4AdQgf0avb0c="
+									},
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAF59nXHj+zcikM=",
+							"_parent": {
+								"$ref": "AAAAAAF59WQEKmgCIbY="
+							},
+							"name": "almacenar",
+							"visibility": "private",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAF59nX90+zjjng=",
+									"_parent": {
+										"$ref": "AAAAAAF59nXHj+zcikM="
+									},
+									"name": "Sintoma",
+									"type": ""
 								}
 							]
 						}
